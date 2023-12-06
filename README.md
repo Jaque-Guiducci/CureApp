@@ -9,7 +9,7 @@
 #### A Missão do CureApp é conectar pessoas, e levar medicamento a quem precisa de forma legal e segura!
 
 #### Componentes do grupo (em ordem alfabética)
-- Camila Costney - [camscostney] (https://github.com/camscostney)
+- Camila Costney - [camscostney](https://github.com/camscostney)
 - Djaniza Vasques Ferreira - [Djaniza](https://github.com/Djaniza)
 - Jaqueline Guiducci - [Jaque-Guiducci](https://github.com/Jaque-guiducci)
 - Levi Provetti - [levitp205](https://github.com/levitp205)
