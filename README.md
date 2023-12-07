@@ -15,8 +15,7 @@
 - Levi Provetti - [levitp205](https://github.com/levitp205)
 - Thiago F Almeida - [tfalmeida1992](https://github.com/tfalmeida1992)
 
-#### Design:
+#### [Design inicial do Projeto](https://www.figma.com/file/ATIxNe9kSfItH3igt7mB2m/Cure-App?type=design&node-id=0-1&mode=design&t=3xVCmpJKxxo6d0gy-0)
 
-https://www.figma.com/file/ATIxNe9kSfItH3igt7mB2m/Cure-App?type=design&node-id=0-1&mode=design&t=3xVCmpJKxxo6d0gy-0
 
 
