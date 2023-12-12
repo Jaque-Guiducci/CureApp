@@ -1,51 +1,90 @@
-<div id="subscription-pharma-page">
-  <img src="pharmacy.webp" alt="Farmácia">
-  <div class="box">
-    <form action="">
-      <fieldset>
-        <legend><b>Cadastro de Farmácia</b></legend>
-          <br>
-          <div>
-            <input type="text" name="nome" id="nome" class="inputUser" required>
-              <label for="nome" class="labelInput">Nome Fantasia</label>
-          </div>
-          <br>
-          <div>
-            <input type="text" name="razao" id="razao" class="inputUser" required>
-              <label for="razao">Razão Social</label>
-          </div>
-          <br>
-          <div>
-            <input type="text" name="cnpj" id="cnpj" class="inputUser" required>
-            <label for="cnpj">CNPJ</label>
-          </div>
-          <br>
-          <div>
-            <input type="text" name="endereco" id="endereco" class="inputUser" required>
-            <label for="endereco">Endereço</label>
-            <input type="text" name="cidade" id="cidade" class="inputUser" size="5"required>
-            <label for="endereco">Cidade</label>
-            <input type="text" name="estado" id="estado" class="inputUser" size="5"required>
-            <label for="estado">Estado</label>
-          </div>
-          <br>
-          <div>
-            <input type="text" name="telefone" id="telefone" class="inputUser" required>
-            <label for="telefone">Telefone</label>
-          </div>
-          <br>
-          <div>
-            <input type="text" name="email" id="email" class="inputUser" required>
-            <label for="email">E-mail</label>
-          </div>
-          <br>
-          <div>
-            <input type="text" name="responsavel" id="responsavel" class="inputUser" required>
-            <label for="responsavel">Responsável</label>
-          </div>
-            <button>Voltar</button> <button>Salvar</button>
-            <p>Já é cadastrado? <button>Faça Login</button></p>
-      </fieldset>
-    </form>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!--settings-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
+  <title>Cure App</title>
+
+  <!--styles-->
+  <link rel="stylesheet" href="./src/styles/global.css">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img id="main-logo" src="./src/assets/images/logo.png" alt="logo cure app">
+        <ul>
+          <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
+          <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
+          <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
+          <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
+          <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main id="root">
+      <div id="subscription-pharma-page">
+        <img src="pharmacy.webp" alt="Farmácia">
+        <div class="box">
+          <form action="">
+            <fieldset>
+            <legend><b>Cadastro de Farmácia</b></legend>
+            <br>
+            <div>
+              <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome Fantasia</label>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="razao" id="razao" class="inputUser" required>
+                <label for="razao">Razão Social</label>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="cnpj" id="cnpj" class="inputUser" required>
+              <label for="cnpj">CNPJ</label>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="endereco" id="endereco" class="inputUser" required>
+              <label for="endereco">Endereço</label>
+              <input type="text" name="cidade" id="cidade" class="inputUser" size="5"required>
+              <label for="endereco">Cidade</label>
+              <input type="text" name="estado" id="estado" class="inputUser" size="5"required>
+              <label for="estado">Estado</label>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="telefone" id="telefone" class="inputUser" required>
+              <label for="telefone">Telefone</label>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="email" id="email" class="inputUser" required>
+              <label for="email">E-mail</label>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="responsavel" id="responsavel" class="inputUser" required>
+              <label for="responsavel">Responsável</label>
+            </div>
+              <button>Voltar</button> <button>Salvar</button>
+              <p>Já é cadastrado? <button>Faça Login</button></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <img id="footer-logo" src="./src/assets/images/logo.png" alt="logo cure app">
+  </footer>
+  <script defer src=".src/scripts/router.js"></script>
+</body>
+</html>
