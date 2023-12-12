@@ -21,18 +21,18 @@
     <nav>
       <img id="main-logo" src="./src/assets/images/logo.png" alt="logo cure app">
         <ul>
-          <li><a class="menu-itens" href="#"><i class="fa-solid fa-house"></i></a></li>
-          <li><a class="menu-itens" href="#">Quero ajudar!</a></li>
-          <li><a class="menu-itens" href="#">Farmácia parceira</a></li>
-          <li><a class="menu-itens" href="#">Pacientes</a></li>
-          <li><a class="menu-itens" href="#">Campanhas</a></li>
+          <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
+          <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
+          <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
+          <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
+          <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
         </ul>
     </nav>
     </header>
-    <main></main>
+    <main id="root"></main>
     <footer>
       <img id="footer-logo" src="./src/assets/images/logo.png" alt="logo cure app">
     </footer>
-    <script defer src="./src/scripts/index.js"></script>
+    <script defer src=".src/scripts/router.js"></script>
 </body>
 </html>

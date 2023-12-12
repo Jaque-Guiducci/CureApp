@@ -1,4 +1,6 @@
-<div id="home">
+export default () => {
+    const container = document.createElement('div')
+    const templateMain = `<div id="home">
     <section id="main-first-section">
         <h1>Você pode ajudar a curar alguém!</h1>
     </section>
@@ -39,4 +41,10 @@
             <p>QUERO SER FARMÁCIA PARCEIRA</p>
         </button>
     </section>
-</div>
+</div>`
+    container.innerHTML = templateMain
+
+    console.log(container)
+
+    return container
+}
