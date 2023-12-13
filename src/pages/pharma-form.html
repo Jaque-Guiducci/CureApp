@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | Pharma</title>
+  <!--settings-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
+  <title>Cure App</title>
+
+  <!--styles-->
+  <link rel="stylesheet" href="./src/styles/global.css">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <img src="pharmacy.webp" alt="Farmácia">
-    <div class="box">
+  <header>
+    <nav>
+      <img id="main-logo" src="./src/assets/images/logo.png" alt="logo cure app">
+        <ul>
+          <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
+          <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
+          <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
+          <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
+          <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main id="root">
+      <div id="subscription-pharma-page">
+        <img src="pharmacy.webp" alt="Farmácia">
+        <div class="box">
         <form action="">
             <fieldset>
                 <legend><b>Cadastro de Farmácia</b></legend>
@@ -54,6 +79,12 @@
             <button href="index.html">Voltar</button> <button>Salvar</button>
                 <p>Já é cadastrado? <button>Faça Login</button></p>
         </form>
+        </div>
     </div>
+  </main>
+  <footer>
+    <img id="footer-logo" src="./src/assets/images/logo.png" alt="logo cure app">
+  </footer>
+  <script defer src=".src/scripts/router.js"></script>
 </body>
 </html>
