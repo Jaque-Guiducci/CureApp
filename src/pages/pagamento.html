@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--settings-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
+    <title>Cure App</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="./src/styles/global.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="main-logo" src="./src/assets/images/logo.png" alt="logo cure app">
+            <ul>
+                <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
+                <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
+                <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
+                <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
+                <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="root">
+        <section>
+            <img width="200" src="/img/voluntarios.jpg" alt="Voluntários Reunidos">
+            <h1>Sua doação é essencial!</h1>
+        </section>
+        <form action="">
+            <fieldset>
+                <legend>Preencha os campos corretamente e escolha uma forma de pagamento:</legend>
+                <p>
+                <div class="form__name">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" placeholder="Nome Completo" id="name" maxlength="24">
+                </div>
+                </p>
+                <p>
+                <div class="form__email">
+                    <label for="email">CPF ou CNPJ</label>
+                    <input type="email" placeholder="email@dominio.com" id="email">
+                </div>
+                </p>
+                <p>
+                <div class="form_tel">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" placeholder="(00)00000000" id="telefone">
+                </div>
+                </p>
+                <p>
+                <div class="form__forma">
+                    <label for="date">Forma de pagamento</label>
+                    <select forma="select">
+                        <option value="valor1">Cartão de Crédito</option>
+                        <option value="valor2" selected>Pix</option>
+                    </select>
+                </div>
+                </p>
+                <button type="submit">Salvar</button>
+                </p>
+                <p>
+                    <a href="index.html"><button>Cancelar</button></a>
+                </p>
+            </fieldset>
+        </form>
+        <div class="card">
+            <form class="card">
+                <fieldset>
+                    <legend>Preencha os dados do cartão de crédito:</legend>
+                    <p>
+                    <div class="card_name">
+                        <label for="name">Nome impresso no cartão</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" placeholder="Nome cartão" id="name" maxlength="24">
+                    </div>
+                    </p>
+                    <p>
+                    <div class="card__number">
+                        <label for="number">Número do cartão</label>
+                        <ion-icon name="card-outline"></ion-icon>
+                        <input type="text" placeholder="0000 0000 0000 0000" id="number"
+                            onkeypress="return isNumeric(event)">
+                    </div>
+                    </p>
+                    <p>
+                    <div class="form__validade">
+                        <label for="date">Validade</label>
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <input type="text" placeholder="MM/AA" id="date" onkeypress="return isNumeric(event)">
+                    </div>
+                    </p>
+                    <div class="form__cvv form__detail">
+                        <label for="cvv">CVV
+                            <ion-icon name="information-circle" class="info"></ion-icon></label>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder="0000" id="cvv" maxlength="4"
+                            onkeypress="return isNumeric(event)">
+                    </div>
+                    </p>
+                    <p>
+                        <button type="submit" class="form__btn">Confirmar</button>
+                    </p>
+                    <p>
+                        <a href="index.html"><button>Cancelar</button></a>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img id="footer-logo" src="./src/assets/images/logo.png" alt="logo cure app">
+    </footer>
+    <script defer src=".src/scripts/router.js"></script>
+    <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
+</body>
+
+</html>
