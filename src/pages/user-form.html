@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!--settings-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
+  <title>Cure App</title>
+
+  <!--styles-->
+  <link rel="stylesheet" href="../styles/global.css">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img id="main-logo" src="../assets/images/logo.png" alt="logo cure app">
+        <ul>
+          <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
+          <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
+          <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
+          <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
+          <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main id="root">
+      <div id="subscription-user-page">
+      <div>
+      <img width="200" src="../assets/images/mulher-afro-alegre-aponta-redimensionado.png" alt="Mulher apontando para o lado direito">
+      </div>
+      <section>
+        <p>
+          Olá. Logo abaixo precisamos que você preencha corretamente os seus dados e aperte o botão salvar. Lembre-se que para o recebimento do medicamento é necessário ter posse da receita médica!
+        </p>
+      </section>
+      <form action="">
+        <fieldset>
+          <legend>Formulário do Usuário</legend>
+            <p>
+              <label for="info_1">
+                Nome Completo: <input type="text" id="info_1" name="Nome Completo">
+              </label>
+            </p>
+            <p>
+              <label for="info_2">
+                CEP: <input type="text" id="info_2" name="CEP">
+              </label>
+            </p>
+            <p>
+              <label for="info_3">
+                CPF: <input type="text" id="info_3" name="CPF">
+              </label>
+            </p>
+            <p>
+              <label for="info_4">
+                Endereço: <input type="text" id="info_4" name="Endereço">
+              </label>
+            </p>
+            <p>
+              <label for="info_5">
+                Cidade: <input type="text" id="info_5" name="Cidade">
+              </label>
+            </p>
+            <p>
+              <label for="info_6">
+                Bairro: <input type="text" id="info_6" name="Bairro">
+              </label>
+            </p>
+            <p>
+              <label for="info_7">
+                Estado: <input type="text" id="info_7" name="Estado">
+              </label>
+            </p>
+            <p>
+              <label for="info_8">
+                Data de Nascimento: <input type="text" id="info_8" name="Data de Nascimento">
+              </label>
+            </p>
+            <p>
+              <label for="info_9">
+                Telefone: <input type="text" id="info_9" name="Telefone">
+              </label>
+            </p>
+            <p>
+              <label for="info_10">
+                E-mail: <input type="text" id="info_10" name="E-mail">
+              </label>
+            </p>
+            <p>
+              <label for="info_11">
+                Senha: <input type="text" id="info_11" name="Senha">
+              </label>
+            </p>
+            <p>
+              <label for="info_12">
+                Confirmar senha: <input type="text" id="info_12" name="Confirmar senha">
+              </label>
+            </p>
+            <p>
+              <button type="submit">Salvar</button>
+            </p>
+          <a href="index.html"><button>Cancelar</button></a>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
+    </footer>
+    <script defer src="..src/scripts/router.js"></script>
+  </body>
+</html> 
