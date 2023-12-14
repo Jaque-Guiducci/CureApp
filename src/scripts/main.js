@@ -44,7 +44,5 @@ export default () => {
 </div>`
     container.innerHTML = templateMain
 
-    console.log(container)
-
     return container
 }
