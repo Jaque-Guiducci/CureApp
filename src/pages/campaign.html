@@ -4,40 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campanhas</title>
+
+     <!--styles-->
+     <link rel="stylesheet" href="../styles/global.css">
+
+     <!--fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav>
-        <img
-          width="200"
-          id="main-logo"
-          src="./src/assets/images/logo.png"
-          alt="logo cure app"
-        />
-        <ul>
-          <li><a class="menu-itens" href="#">Quero ajudar!</a></li>
-          <li><a class="menu-itens" href="#">Farmácia parceira</a></li>
-          <li><a class="menu-itens" href="#">Pacientes</a></li>
-          <li><a class="menu-itens" href="#">Login</a></li>
-        </ul>
+        <img id="main-logo" src="../assets/images/logo.png" alt="logo cure app">
+          <ul>
+            <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
+            <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
+            <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
+            <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
+            <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
+          </ul>
       </nav>
-    </header>
+      </header>
     <main>
       <section>
         <p>CURE UMA PESSOA FAZENDO SUA DOAÇÃO</p>
       </section>
       <div>
-        <img width="450" src="img/cesta_remedio.png" alt="logo campanha" />
+        <img width="450" src="../assets/images/cesta_remedio.png" alt="logo campanha" />
       </div>
     </main>
     <section>
       <p>CAMPANHAS EM ANDAMENTO</p>
     </section>
     <div>
-      <img width="200" src="img/donation.png" alt="DOAÇÃO" />
+      <img width="200" src="../assets/images/donation.png" alt="DOAÇÃO" />
     </div>
     <ul>
       <li><a class="option-itens" href="#">Doar agora</a></li>
     </ul>
   </body>
+  <footer>
+    <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
+  </footer>
 </html>
