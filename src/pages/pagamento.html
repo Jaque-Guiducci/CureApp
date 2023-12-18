@@ -19,18 +19,10 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img id="main-logo" src="../assets/images/logo.png" alt="logo cure app">
-            <ul>
-                <li><a class="menu-itens" href="/" onclick="routes()"><i class="fa-solid fa-house"></i></a></li>
-                <li><a class="menu-itens" href="/suporter" onclick="routes()">Quero ajudar!</a></li>
-                <li><a class="menu-itens" href="/pharm" onclick="routes()">Farmácia parceira</a></li>
-                <li><a class="menu-itens" href="/paciente" onclick="routes()">Pacientes</a></li>
-                <li><a class="menu-itens" href="/campaigns" onclick="routes()">Campanhas</a></li>
-            </ul>
-        </nav>
-    </header>
+    <cure-header 
+    options="home,suporter,pharmacy,user,campaign,login"
+    origin="page"
+    ></cure-header>
     <main id="root">
         <section>
             <img width="200" src="../assets/images/voluntarios.jpg" alt="Voluntários Reunidos">
@@ -120,7 +112,7 @@
     <footer>
         <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
     </footer>
-    <script defer src=".src/scripts/router.js"></script>
+    <script defer src="../components/CureHeader/CureHeader.js"></script>
     <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
 </body>
 
