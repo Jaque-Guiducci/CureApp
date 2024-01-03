@@ -9,6 +9,7 @@
 
   <!--styles-->
   <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/user-form.css">
 
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,7 @@
     <main id="root">
       <div id="subscription-user-page">
       <div>
-      <img width="200" src="../assets/images/mulher-afro-alegre-aponta-redimensionado.png" alt="Mulher apontando para o lado direito">
+      <img width="200" src="../assets/images/pilula-coracao-form.jpeg" alt="Frasco de pilulas em formato de coração">
       </div>
       <section>
         <p>
@@ -32,73 +33,42 @@
         </p>
       </section>
       <form action="">
-        <fieldset>
-          <legend>Formulário do Usuário</legend>
-            <p>
-              <label for="info_1">
-                Nome Completo: <input type="text" id="info_1" name="Nome Completo">
-              </label>
-            </p>
-            <p>
-              <label for="info_2">
-                CEP: <input type="text" id="info_2" name="CEP">
-              </label>
-            </p>
-            <p>
-              <label for="info_3">
-                CPF: <input type="text" id="info_3" name="CPF">
-              </label>
-            </p>
-            <p>
-              <label for="info_4">
-                Endereço: <input type="text" id="info_4" name="Endereço">
-              </label>
-            </p>
-            <p>
-              <label for="info_5">
-                Cidade: <input type="text" id="info_5" name="Cidade">
-              </label>
-            </p>
-            <p>
-              <label for="info_6">
-                Bairro: <input type="text" id="info_6" name="Bairro">
-              </label>
-            </p>
-            <p>
-              <label for="info_7">
-                Estado: <input type="text" id="info_7" name="Estado">
-              </label>
-            </p>
-            <p>
-              <label for="info_8">
-                Data de Nascimento: <input type="text" id="info_8" name="Data de Nascimento">
-              </label>
-            </p>
-            <p>
-              <label for="info_9">
-                Telefone: <input type="text" id="info_9" name="Telefone">
-              </label>
-            </p>
-            <p>
-              <label for="info_10">
-                E-mail: <input type="text" id="info_10" name="E-mail">
-              </label>
-            </p>
-            <p>
-              <label for="info_11">
-                Senha: <input type="text" id="info_11" name="Senha">
-              </label>
-            </p>
-            <p>
-              <label for="info_12">
-                Confirmar senha: <input type="text" id="info_12" name="Confirmar senha">
-              </label>
-            </p>
-            <p>
-              <button type="submit">Salvar</button>
-            </p>
-          <a href="index.html"><button>Cancelar</button></a>
-        </fieldset>
+        <div>
+          <label for="info_1">Nome Completo</label>
+          <input type="text" id="info_1" name="nome completo"><br>
+          <label for="info_2">Data de Nascimento</label>
+          <input type="date" id="info_2" name="data de nascimento"><br>
+          <label for="info_3">Naturalidade</label>
+          <input type="text" name="nacionalidade" id="info_3"><br>
+          <label for="info_4">CPF</label>
+          <input type="text" name="cpf" id="info_4" ><br>
+          <label for="info_5">RG</label>
+          <input type="text" name="rg" id="info_5"><br>
+          <label for="info_6">Endereço</label>
+          <input type="text" name="endereço" id="info_6"><br>
+          <label for="info_7">CEP</label>
+          <input type="text" name="cep" id="info_7"><br>
+          <label for="info_8">N°</label>
+          <input type="text" name="n" id="info_8"><br>
+          <label for="info_9">Complemento</label>
+          <input type="text" name="complemento" id="info_9"><br>
+          <label for="info_10">Bairro</label>
+          <input type="text" name="bairro" id="info_10"><br>
+          <label for="info_11">Cidade</label>
+          <input type="text" name="cidade" id="info_11"><br>
+          <label for="info_12">Estado</label>
+          <input type="text" name="estado" id="info_12"><br>
+          <label for="info_13">Telefone</label>
+          <input type="tel" name="telefone" id="info_13"><br>
+          <label for="info_14">Email</label>
+          <input type="email" name="email" id="info_14"><br>
+          <label for="info_15">Senha</label>
+          <input type="password" name="senha" id="info_15"><br>
+          <label for="info_16">Confirmar Senha</label>
+          <input type="password" name="confirmar senha" id="info_16"><br>
+          <button type="submit">Voltar</button>
+          <button type="button">Salvar</button>
+          </div>
       </form>
     </main>
     <footer>
