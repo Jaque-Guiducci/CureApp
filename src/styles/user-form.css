@@ -10,14 +10,47 @@ section{
 }
 .text1{
     text-align: center;
+    
 }
 .right{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 50px;
-    /* margin-left: 140px;
-    margin-right: 40px;
-    margin-top: 40px; */
-    
+    color: #073142;
+    margin-left: 45px;
+}
+/* .align{
+    display: block;
+    text-align: left;
+} */
+
+/* label{
+    display: block;
+    text-align: left;
+} */
+form{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.input-group{
+    width: 100%;
+}
+.input-group-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-flex div {
+    width: 45%;
+}
+
+.input-group-flex input{
+    width: 100%;
+}
+
+.input-group input{
+    width: 100%;
+
 }
