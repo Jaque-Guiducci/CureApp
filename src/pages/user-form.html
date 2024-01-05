@@ -33,22 +33,28 @@
           <p class="text1">
             Olá. Logo abaixo precisamos que você preencha corretamente os seus dados e <br>aperte o botão salvar. Lembre-se que para o recebimento do medicamento é <br>necessário ter posse da receita médica!
           </p>
-          <form action="">
+          <form action="" method="post">
               
             <div class="input-group">
                 <label for="info_1">Nome Completo</label><br>
-                <input class="input-1" type="text" id="info_1" name="nome completo"><br>
+                <input type="text" id="info_1" name="nome completo"><br>
               </div>
 
               <div class="input-group-flex">
                 <div>
                   <label for="info_2">Data de Nascimento</label><br>
-                  <input class="input-2" type="date" id="info_2" name="data de nascimento"><br>
+                  <input type="date" id="info_2" name="data de nascimento"><br>
                 </div>
+
                 <div>
                   <label for="info_3">Naturalidade</label><br>
-                  <input class="input-2" type="text" name="nacionalidade" id="info_3"><br>
+                  <select class="select-1" name="naturalidade" id="naturalidade">
+                    <option value="" selected> Escolha </option>
+                    <option value="brasil">Brasileiro</option>
+                    <option value="estrangeiro">Estrangeiro</option>
+                  </select><br>
                 </div>
+
               </div>
               
               <div class="input-group">
@@ -63,11 +69,11 @@
               <div class="input-group-flex">
                 <div>
                   <label for="info_7">CEP</label><br>
-                  <input class="input-2" type="text" name="cep" id="info_7"><br>
+                  <input type="text" name="cep" id="info_7"><br>
                 </div>
                 <div>
                   <label for="info_8">N°</label><br>
-                  <input class="input-2" type="text" name="n" id="info_8"><br>
+                  <input type="text" name="n" id="info_8"><br>
                 </div>
               </div>
               
@@ -85,7 +91,36 @@
                 </div>
                 <div>
                   <label for="info_12">Estado</label><br>
-                  <input type="text" name="estado" id="info_12"><br>
+                    <select class="select-1" name="estado" id="estado">
+                      <option value="" selected> Escolha </option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goías</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="TO">Tocantins</option>
+                    </select>
                 </div>
               </div>
 
@@ -100,8 +135,10 @@
                 <input type="password" name="confirmar senha" id="info_16"><br>
               </div>
 
-              <button type="submit">Voltar</button>
-              <button type="button">Salvar</button>
+              <div class="button-flex">
+                <button class="butype-1" type="submit">Cancelar</button>
+                <button class="butype-2" type="submit">Salvar</button>
+              </div>
           </form>
         </div>
       </section>
