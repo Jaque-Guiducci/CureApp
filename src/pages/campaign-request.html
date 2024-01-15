@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--settings-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
+    <title>Solicitação de Campanhas</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="..//styles/global.css">
+    <link rel="stylesheet" href="..//styles/campaign-request.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <cure-header options="home,suporter,pharmacy,user,campaign,login" origin="page"></cure-header>
+    <main id="root">
+        <div class="subscription-campaign-request">
+            <div class="second-box">
+                <h1>Solicitação de Medicamentos</h1>
+            </div>
+            <form action="" class="medicine-request">
+                <div class="form-medicine">
+                    <label for="name">Medicamento*</label>
+                    <input type="text" id="name" class="input-stardard" maxlength="50">
+                </div>
+            
+                <div class="select-pharma">
+                    <label for="date">Selecione até 03 farmácias parceiras: </label>
+                    <select forma="select" class="input-stardard">
+                        <option value="valor1">Pharma One</option>
+                        <option value="valor2">Pharma Two</option>
+                        <option value="valor3">Pharma Three</option>
+                        <option value="valor4" selected>Pharma Four</option>
+                    </select>
+                </div>
+
+                <div class="form_text">
+                    <label for="telefone">Agora nos conte mais sobre você e porque você precisa da medicação:</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="form-closure">
+                    <div class="box-one">
+                        <label for="date">Data de Encerramento da Campanha </label>
+                        <input type="date" id="closure-date" class="input-stardard">
+                    </div>
+                    <div class="box-two">
+                        <input type="radio" id="recurrent" class="radio" >
+                        <label for="medicine">Preciso dessa medicação com recorrência.</label>
+                    </div>
+                </div>
+                <div class="form-prescription">
+                    <label for="prescription">Faça o upload da receita médica válida. Você ainda deverá apresentar a receita a farmácia quando
+                        for retirar o medicamento.</label>
+                    <div class="inputContainer" tabindex="0">
+                        <label for="">Clique aqui ou arrasate para fazer o upload do arquivo </label>
+                        <input multiple="multiple" class="fileupload-input" id="input_303" type="file" name="file">
+                    </div> 
+                        
+                </div>
+                <div class="accept">
+                    <input type="radio" id="accept" class="radio" >
+                    <label for="tex">Li e aceito os termos de uso.</label>
+                </div>
+                <div class="accept">
+                    <input type="radio" id="declare" class="radio" >
+                    <label for="tex">Declaro verdadeiras as informações aqui declaradas.</label>
+                </div>                    
+            </form>
+    
+            <div class="button">
+                <button type="submit" class="form-btn">SOLICITAR MEDICAÇÃO</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
+    </footer>
+    <script defer src="../components/CureHeader/CureHeader.js"></script>
+    <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
+    
+</body>
+
+</html>

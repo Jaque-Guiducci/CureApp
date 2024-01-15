@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
-    <title>Cure App</title>
+    <title>Forma de Pagamento</title>
 
     <!--styles-->
     <link rel="stylesheet" href="..//styles/global.css">
@@ -21,44 +21,47 @@
 <body>
     <cure-header options="home,suporter,pharmacy,user,campaign,login" origin="page"></cure-header>
     <main>
-        <div class="img">
-            <img src="../assets/images/payForm.jpg" alt="Medicamentos">
-        </div>
+        <div class="subscription-pay-page">
+            <div class="img">
+               
+            </div>
         <div class="first-box">
-            <h1>Sua doação é essencial!</h1>
+            <div class="form-title">
+                <h1>Sua doação é essencial!</h1>
+            </div>
 
             <div class="second-box">
                 <form action="" class="first-form">
                     <legend>Preencha os campos corretamente e escolha uma forma de pagamento:</legend>
-                    <div class="form__name">
+                    <div class="form-name">
                         <label for="name">Nome Completo:</label>
                         <input type="text" id="name" class="input-stardard" placeholder="Nome Completo" maxlength="50">
                     </div>
                     <legend>Caso queira acompanhar o andamento da campanha, informe seus dados de contato,
                         prometemos não mandar spam! </legend>
-                    <div class="form__email">
+                    <div class="form-email">
                         <label for="email">E-mail: </label>
                         <input type="email" id="email" class="input-stardard" placeholder="email@dominio.com">
                     </div>
 
-                    <div class="form_tel">
+                    <div class="form-tel">
                         <label for="telefone">Telefone</label>
                         <input type="tel" id="telefone" class="input-stardard" placeholder="(00)00000000">
                     </div>
 
-                    <div class="form__forma">
+                    <div class="form-forma">
                         <label for="date">Forma de pagamento</label>
                         <select forma="select" class="input-stardard">
                             <option value="valor1">Cartão de Crédito</option>
                             <option value="valor2" selected>Pix</option>
                         </select>
                     </div>
-                    
+
                 </form>
-                
+
             </div>
             <div class="card">
-                <form class="card">
+                <form class="data">
                     <legend>Preencha os dados do cartão de crédito:</legend>
                     <div class="card-input">
                         <label for="name">Nome impresso no cartão</label>
@@ -83,12 +86,13 @@
                         </div>
                     </div>
                 </form>
-                
+
             </div>
             <div class="button">
-                <button type="submit" class="form__btn">Confirmar Pagamento</button>
-                <a href="index.html"><button>Cancelar</button></a>
+                <button type="submit" class="form-btn">Confirmar</button>
+                <a href="index.html"><button class="cancel">Cancelar</button></a>
             </div>
+        </div>
         </div>
     </main>
     <footer>
