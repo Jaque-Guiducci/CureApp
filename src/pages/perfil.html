@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-      <!--settings-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
-  <title>Cure App</title>
+    <!--settings-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi, Djaniza, Camila, Thiago, Jaqueline">
+    <title>Cure App</title>
 
-  <!--styles-->
-  <link rel="stylesheet" href="../styles/global.css">
-  <link rel="stylesheet" href=>
+    <!--styles-->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/perfil.css">
 
-  <!--fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <cure-header 
-    options="home,suporter,pharmacy,campaign"
-    origin="page"
-  ></cure-header>
-  <main id="root">
-    <div id="subscription-user-page">
-        <section>
-            <div>
-                <p>JANE DOE</p>
-            </div>
-            <div>
-                <img src="" alt="Vector">
-                <img src="" alt="Vector">
-                <a href="">FALE CONOSCO</a>
-            </div>
-            <div>
-                <p>CAMPANHAS ATIVAS</p>
-                <p>CAMPANHAS FINALIZADAS</p>
-                <p>FARMÁCIAS VINCULADAS</p>
-            </div>
 
-            <button>Adicionar Farmácia</button>
-            <button>Solicitar Medicamento</button>
+<body>
+    <cure-header options="home,suporter,pharmacy,campaign" origin="page"></cure-header>
+    
+    <main class="display-main" id="root">
+    
+        <section>
+            <img src="../assets/images/close-up-asian-woman-outdoors_23-2149032780.avif" alt="mulher asiática">
+            <div>
+                <p class="different-font">JANE DOE</p>
+            </div>
+            <div class="options-flex">
+                <img src="../assets/images/vector-settings.png" alt="vector-settings">
+                <img src="../assets/images/vector-edit.png" alt="vector-edit">
+                <a class="different-font" href="">FALE CONOSCO</a>
+            </div>
+            <div class="campaign-flex">
+                <div>
+                    <p class="campaign-status">CAMPANHAS ATIVAS</p>
+                    <p class="campaign-status">CAMPANHAS FINALIZADAS</p>
+                    <p class="campaign-status">FARMÁCIAS VINCULADAS</p>
+                </div>
+                <div>
+                    <p class="campaign-number">1</p>
+                    <p class="campaign-number">2</p>
+                    <p class="campaign-number">3</p>
+                </div>
+            </div>
+            <div class="button-flex">
+                <button>Adicionar Farmácia</button>
+                <button>Solicitar Medicamento</button>
+            </div>
+    
         </section>
         <section>
-           <h2>CAMPANHAS ATIVAS</h2>
-           <div>
-                <img src="" alt="Medicamento">
+            <h2 class="element-h2">CAMPANHAS ATIVAS</h2>
+            <div class="group-campaign">
+                <img src="../assets/images/vector-figure.png" alt="vector-figure">
                 <div>
                     <p>Data de Expiração: xx/xx/xxxx </p>
                     <p>Percentual Alcançado: xx%</p>
                 </div>
-            <div>
-                <img src="" alt="Medicamento">
+            </div>
+            <div class="group-campaign">
+                <img src="../assets/images/vector-figure.png" alt="vector-figure">
                 <div>
                     <p>Data de Expiração: xx/xx/xxxx </p>
                     <p>Percentual Alcançado: xx%</p>
                 </div>
-           </div>
-           <h2>AGUARDANDO APROVAÇÃO</h2>
-            <div>
-                <img src="" alt="Medicamento">
+            </div>
+            <h2 class="element-h2">AGUARDANDO APROVAÇÃO</h2>
+            <div class="group-campaign">
+                <img src="../assets/images/vector-figure.png" alt="vector-figure">
                 <div>
                     <p>Data de Expiração: xx/xx/xxxx </p>
                     <p>Percentual Alcançado: xx%</p>
                 </div>
+            </div>
         </section>
-    </div>
-  </main>
-  <footer>
-    <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
-  </footer>
-  <script defer src="../components/CureHeader/CureHeader.js"></script>
-  <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
+    
+    </main>
+    <footer>
+        <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
+    </footer>
+    <script defer src="../components/CureHeader/CureHeader.js"></script>
+    <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
 </body>
+
 </html>
