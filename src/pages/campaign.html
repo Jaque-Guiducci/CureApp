@@ -7,11 +7,13 @@
 
      <!--styles-->
      <link rel="stylesheet" href="../styles/global.css">
+     <link rel="stylesheet" href="../styles/campaign.css">
 
      <!--fonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -20,22 +22,55 @@
       origin="page"
     ></cure-header>
     <main>
-      <section>
-        <p>CURE UMA PESSOA FAZENDO SUA DOAÇÃO</p>
+      <section id="title">
+        <div class="inner-container">
+          <h1>CURE UMA PESSOA FAZENDO SUA DOAÇÃO</h1>
+        </div>
       </section>
-      <div>
-        <img width="450" src="../assets/images/cesta_remedio.png" alt="logo campanha" />
+      <div id="campaigns-subtitle">
+        <h2>CAMPANHAS EM ANDAMENTO</h2>
       </div>
+      <section id="card-section">
+        <div class="card-container">
+          <div class="profile-image"></div>
+          <div class="card-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veritatis culpa dignissimos, ipsa mollitia, adipisci accusamus voluptatum quod quis delectus esse dicta distinctio quas et. Libero et necessitatibus sapiente debitis.</p>
+            <p>META R$12,70</p>
+            <div class="donation-bar">
+              <div class="donation-complete"></div>
+              <p>70%</p>
+            </div>
+          </div>
+          <div class="medicine-card">
+            <img src="../assets/images/paracetamol-img.jpg" alt="" class="medicine-image">
+            <p class="medicine-name">Paracetamol 750mg</p>
+            <div class="medicine-buttons">
+              <button class="donate-button">Ver Mais</button>
+              <button class="donate-button" onclick="window.location.href='./pagamento.html'">Doar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="profile-image"></div>
+          <div class="card-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sapiente nesciunt expedita, obcaecati ab consectetur facere culpa maiores soluta dolore, doloremque accusantium cumque? Assumenda ipsam neque illum quidem aliquid consequatur.</p>
+            <p>META R$12,70</p>
+            <div class="donation-bar">
+              <div class="donation-complete"></div>
+              <p>70%</p>
+            </div>
+          </div>
+          <div class="medicine-card">
+            <img src="../assets/images/paracetamol-img.jpg" alt="" class="medicine-image">
+            <p class="medicine-name">Paracetamol 750mg</p>
+            <div class="medicine-buttons">
+              <button class="donate-button">Ver Mais</button>
+              <button class="donate-button" onclick="window.location.href='./pagamento.html'">Doar</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <section>
-      <p>CAMPANHAS EM ANDAMENTO</p>
-    </section>
-    <div>
-      <img width="200" src="../assets/images/donation.png" alt="DOAÇÃO" />
-    </div>
-    <ul>
-      <li><a class="option-itens" href="#">Doar agora</a></li>
-    </ul>
     <script defer src="../components/CureHeader/CureHeader.js"></script>
     <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
   </body>

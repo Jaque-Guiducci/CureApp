@@ -7,10 +7,13 @@
 }
 
 h1 {
-    width: 30%;
-    margin-left: 15%;
+    width: 50%;
+    margin-left: 5%;
     padding-top: 8%;
-    font-weight: 200;
+    font-weight: 400;
+    font-size: 6rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 2px #FFFFFF;
 }
 
 .second-section {
@@ -26,6 +29,7 @@ h1 {
     font-size: 18px;
     width: 50%;
     text-align: center;
+    font-weight: 900;
 }
 
 h2 {
@@ -57,17 +61,6 @@ span i {
     background-size: cover;
     background-attachment: fixed;
     height: 400px;
- }
-
- .inner-container {
-    width: 80%;
-    height: 80%;
-    background-color: rgba(252, 250, 239, 0.9);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
  }
 
  #button-section {
