@@ -22,77 +22,75 @@
     <cure-header options="home,suporter,pharmacy,user,campaign,login" origin="page"></cure-header>
     <main>
         <div class="subscription-pay-page">
-            <div class="img">
-               
-            </div>
-        <div class="first-box">
-            <div class="form-title">
-                <h1>Sua doação é essencial!</h1>
-            </div>
+            <div class="payment-img"></div>
+            <div class="first-box">
+                <div class="form-title">
+                    <h1>Sua doação é essencial!</h1>
+                </div>
 
-            <div class="second-box">
-                <form action="" class="first-form">
-                    <legend>Preencha os campos corretamente e escolha uma forma de pagamento:</legend>
-                    <div class="form-name">
-                        <label for="name">Nome Completo:</label>
-                        <input type="text" id="name" class="input-stardard" placeholder="Nome Completo" maxlength="50">
-                    </div>
-                    <legend>Caso queira acompanhar o andamento da campanha, informe seus dados de contato,
-                        prometemos não mandar spam! </legend>
-                    <div class="form-email">
-                        <label for="email">E-mail: </label>
-                        <input type="email" id="email" class="input-stardard" placeholder="email@dominio.com">
-                    </div>
+                <div class="second-box">
+                    <form action="" class="first-form">
+                        <legend>Preencha os campos corretamente e escolha uma forma de pagamento:</legend>
+                        <div class="form-name">
+                            <label for="name">Nome Completo:</label>
+                            <input type="text" id="name" class="input-stardard" placeholder="Nome Completo" maxlength="50">
+                        </div>
+                        <legend>Caso queira acompanhar o andamento da campanha, informe seus dados de contato,
+                            prometemos não mandar spam! </legend>
+                        <div class="form-email">
+                            <label for="email">E-mail: </label>
+                            <input type="email" id="email" class="input-stardard" placeholder="email@dominio.com">
+                        </div>
 
-                    <div class="form-tel">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" class="input-stardard" placeholder="(00)00000000">
-                    </div>
+                        <div class="form-tel">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" class="input-stardard" placeholder="(00)00000000">
+                        </div>
 
-                    <div class="form-forma">
-                        <label for="date">Forma de pagamento</label>
-                        <select forma="select" class="input-stardard">
-                            <option value="valor1">Cartão de Crédito</option>
-                            <option value="valor2" selected>Pix</option>
-                        </select>
-                    </div>
+                        <div class="form-forma">
+                            <label for="date">Forma de pagamento</label>
+                            <select forma="select" class="input-stardard">
+                                <option value="valor1">Cartão de Crédito</option>
+                                <option value="valor2" selected>Pix</option>
+                            </select>
+                        </div>
 
-                </form>
+                    </form>
 
-            </div>
-            <div class="card">
-                <form class="data">
-                    <legend>Preencha os dados do cartão de crédito:</legend>
-                    <div class="card-input">
-                        <label for="name">Nome impresso no cartão</label>
-                        <input type="text" id="name" class="input-stardard" placeholder="Nome cartão" maxlength="25">
-                    </div>
-                    <div class="card-input">
-                        <label for="number">Número do cartão</label>
-                        <input type="text" id="number" class="input-stardard" placeholder="0000 0000 0000 0000"
-                            onkeypress="return isNumeric(event)">
-                    </div>
-                    <div class="card-input-more">
-                        <div class="box-one">
-                            <label for="cvv">CVV
-                                <ion-icon name="information-circle" class="info"></ion-icon></label>
-                            <input type="password" id="cvv" class="input-stardard" placeholder="0000" maxlength="4"
+                </div>
+                <div class="card">
+                    <form class="data">
+                        <legend>Preencha os dados do cartão de crédito:</legend>
+                        <div class="card-input">
+                            <label for="name">Nome impresso no cartão</label>
+                            <input type="text" id="name" class="input-stardard" placeholder="Nome cartão" maxlength="25">
+                        </div>
+                        <div class="card-input">
+                            <label for="number">Número do cartão</label>
+                            <input type="text" id="number" class="input-stardard" placeholder="0000 0000 0000 0000"
                                 onkeypress="return isNumeric(event)">
                         </div>
-                        <div class="box-two">
-                            <label for="date">Validade</label>
-                            <input type="text" id="date" class="input-stardard" placeholder="MM/AA"
-                                onkeypress="return isNumeric(event)">
+                        <div class="card-input-more">
+                            <div class="box-one">
+                                <label for="cvv">CVV
+                                    <ion-icon name="information-circle" class="info"></ion-icon></label>
+                                <input type="password" id="cvv" class="input-stardard" placeholder="0000" maxlength="4"
+                                    onkeypress="return isNumeric(event)">
+                            </div>
+                            <div class="box-two">
+                                <label for="date">Validade</label>
+                                <input type="text" id="date" class="input-stardard" placeholder="MM/AA"
+                                    onkeypress="return isNumeric(event)">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
 
+                </div>
+                <div class="button">
+                    <button type="submit" class="form-btn">Confirmar</button>
+                    <a href="index.html"><button class="cancel">Cancelar</button></a>
+                </div>
             </div>
-            <div class="button">
-                <button type="submit" class="form-btn">Confirmar</button>
-                <a href="index.html"><button class="cancel">Cancelar</button></a>
-            </div>
-        </div>
         </div>
     </main>
     <footer>

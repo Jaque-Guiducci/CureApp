@@ -1,40 +1,70 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Bellota Text', sans-serif;
     background-image: url('../assets/images/young-pharmacist.png');
     background-size:cover;
-    background-position:unset;
-    color:black;
+    background-position: center;
+    color: #073142;
   }
-  
-  button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 8px;
+
+  .box {
+    height: 100%;
   }
+
+  label {
+    color: var(--DarkBlue, #073142);
+    font-family: Bellota Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 228.571% */
+}
   
   form fieldset{
-    display: block;
-    background-color: rgba(252, 250, 239, 0.5);
-    margin-right:65cqmax;
-    margin-bottom:10px;
-    margin-top: 150px;
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(252, 250, 239, 0.4);
+    backdrop-filter: blur(10px);
+    margin: 5%;
     border-radius: 10px;
-    padding-right: 10px;
-  
+    border: none;
+    padding: 20px;
+    width: 50%;
   }
-  
-  
-  button{
-    display: inline;
-    margin-bottom:371px;
-    margin-left: 30px;
-    color: white;
+
+  .form-sections {
+    display: flex;
+    flex-direction: column;
   }
+
+  .section-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 200px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Bellota Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    border: none;
+    background: var(--PaleRed, #D88A77);
+    color: var(--BaseWhite, #FCFAEF);
+  }
+
+  button:hover {
+    color: #D88A77;
+    background-color: #FCFAEF;
+  }
+
   
