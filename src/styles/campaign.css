@@ -1,0 +1,141 @@
+* {
+    color: #073142;
+}
+
+#title {
+    height: 60dvh;
+    background-image: url('../assets/images/cesta_remedio.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+#campaigns-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20dvh;
+}
+
+h2 {
+    width: fit-content;
+    padding: 2%;
+    font-size: 2rem;
+}
+
+#card-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 10rem;
+    border-radius: 20px;
+    box-shadow: 3px 6px 15px -4px rgba(0,0,0,0.75);
+    margin-bottom: 5%;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.card-content > p {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}
+
+.donation-bar {
+    height: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 6px 15px -4px rgba(0,0,0,0.75);
+}
+
+.donation-bar > p {
+    font-size: 0.8rem;
+}
+
+.donation-complete {
+    width: 70%;
+    height: 100%;
+    background-color: #3E8A9B;
+    border-radius: 10px;
+}
+
+.profile-image {
+    background-image: url("../assets/images/close-up-asian-woman-outdoors.jpg");
+    height: 100%;
+    width: 20% ;
+    border-radius: 20px;
+    background-position: top;
+    background-size: cover;
+}
+
+.medicine-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 6px 15px -4px rgba(0,0,0,0.75);
+}
+
+.medicine-card > img {
+    max-height: 40%;
+    margin-top: 5px;
+}
+
+.medicine-card > p {
+    font-size: 0.8rem;
+}
+
+.medicine-buttons {
+    height: 30%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -15px;
+}
+
+.donate-button {
+    width: 80%;
+    border-radius: 10px;
+    background-color: #073142;
+    color: #FFFFFF;
+    height: 25px;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.donate-button:hover {
+    background-color: #3E8A9B;
+    color:#073142;
+}

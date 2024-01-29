@@ -70,3 +70,15 @@ footer {
 #footer-logo {
   max-height: 30px;
 }
+
+.inner-container {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(252, 250, 239, 0.4);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  backdrop-filter: blur(10px);
+}
