@@ -41,7 +41,7 @@ class CureHeader extends HTMLElement {
 		const paths = {
 			main: {
 				home: "./index.html",
-				suporter: "./src/pages/pagamento.html",
+				suporter: "./src/pages/campaign.html",
 				pharmacy: "./src/pages/pharma-form.html",
 				user: "./src/pages/user-form.html",
 				campaign: "./src/pages/campaign.html",
@@ -49,7 +49,7 @@ class CureHeader extends HTMLElement {
 			},
 			page: {
 				home: "../../index.html",
-				suporter: "./pagamento.html",
+				suporter: "./campaign.html",
 				pharmacy: "./pharma-form.html",
 				user: "./user-form.html",
 				campaign: "./campaign.html",
@@ -65,7 +65,6 @@ class CureHeader extends HTMLElement {
 		}
 		const Tag = document.createElement('li')
 		const Link = document.createElement('a')
-		const icon = document.createElement('i')
 		if (item === "home"){
 			Link.innerHTML = `<ion-icon id="nav-icon" name="home"></ion-icon>`
 		 } else {
