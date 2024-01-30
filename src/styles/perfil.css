@@ -1,26 +1,37 @@
 body{
-    background-color: #D88A77;
-
+    background-color: #FCFAEF;
+    box-shadow: inset 10px 34px 250px 0px rgba(7,49,66,1);
 }
 
 .first-display{
     display: flex;;
     margin: 60px auto 30px;
-    background-color: #FFFFFF;
-    width: 70vw;
+    background-color: #ffffffa0;
+    width: 62vw;
     border-radius: 30px;
-    height: 80vh;
+    height: 81vh;
+    box-shadow: 1px 1px 17px 0px rgba(0,0,0,0.40);
 }
+
 .sect-one{
     border-right: 1.5px solid #073142;
-    margin: 40px;
+    margin: 40px 10px 40px;
     padding: 25px 25px;
-    width: 17vw;
+    width: 14vw;
 }
+
+.relative-image{
+    position: relative;
+    top: -90px;
+    left: -70px;
+    width: 1px;
+    height: 1px;
+}
+
 .image-perfil{
-    width: 141px;
-    border-radius: 40px;
-    height: 155px;
+    width: 110px;
+    height: 120px;
+    border-radius: 30px;
     margin-bottom: 10px;
 }
 
@@ -32,6 +43,7 @@ body{
     color: #073142;
     margin-top: 30px;
 }
+
 .different-font{
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -42,34 +54,50 @@ body{
     justify-content: space-around;
     margin-top: 7px;
 }
+
 .link-a{
     font-family: 'Bebas Neue', sans-serif;
     color: #073142;
     font-size: 18px;
 }
+
 .campaign-flex{
-    display: flex;
     margin-top: 40px;
+    padding: 10px;
 }
+
+.item-campanha {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .campaign-status{
     font-family: 'Bebas Neue', sans-serif;
-    margin: 10px 100px 30px 0px;
+    margin: 10px;
 }
+
 .campaign-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #D88A77;
-    border-radius: 100px;
-    margin-top: 10px;
-    padding: 7px 14px;
     background-color: #D88A77;
+    border-radius: 50px;
+    padding: 10px;
     color: #FCFAEF;
-    font-size: 15px;
+    font-size: 18px;
+    width: 15px;
+    height: 15px;
 }
+
 .button-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
 }
+
 button{
     width: 190px;
     height: 45px;
@@ -80,33 +108,36 @@ button{
     font-size: 16px;
     margin-bottom: 15px;
 }
+
 .sect-two{
     margin: 40px;
     padding: 2px 25px;
 }
+
 .element-p{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 #element-aprov{
     margin-top: 25px;
     
 }
+
 .group-campaign{
     display: flex;
-    /* justify-content: space-around; */
     margin-bottom: 15px;
     height: 110px;
     width: 33vw;
-    /* padding: 40px 160px 40px 100px ; */
     border: 2px solid #FCFAEF;
     border-radius: 20px;
     background-color: #FCFAEF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     align-items: center;
 }
+
 .ajust-bloco{
     border-radius: 15px;
     border: 1px solid #D88A77;
@@ -120,13 +151,16 @@ button{
     margin-left: 25px;
     margin-right: 22px;
 }
+
 .ajust-image{
     width: 30px;
     margin-bottom: 20px;
 }
+
 .size-p{
     font-size: 13px;
 }
+
 .ajust{
     margin: 10px 
 }
