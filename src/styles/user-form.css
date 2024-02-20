@@ -1,3 +1,5 @@
+/* Web */
+
 body{
     background-color: #FCFAEF; 
 }
@@ -94,4 +96,38 @@ button{
     margin-top: 3px;
     margin-bottom: 15px;
     width: 102%;
+}
+
+/* Celulares */
+
+@media (max-width: 450px){
+    .pic {
+        text-align: center;
+    }
+
+    .image{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    section {
+        display: block;
+    }
+
+    .right{
+        margin: 0px;
+        padding: 15px 30px;
+        color: #073142;
+    }
+    .text1{
+        font-size: 15px;
+    }
+
+    .input-group-flex{
+        display: block;
+    }
+
+    .input-group-flex div{
+        width: 100%;
+    }
 }

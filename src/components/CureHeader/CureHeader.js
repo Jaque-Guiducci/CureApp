@@ -82,7 +82,7 @@ class CureHeader extends HTMLElement {
 		style.textContent = `
 		header {
 			height: 60px;
-			width: 100wh;
+			width: 100vw;
 			background-color: #3E8A9B;
 		  }
 		  
