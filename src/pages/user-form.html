@@ -10,6 +10,7 @@
   <!--styles-->
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/user-form.css">
+  <script src="../scripts/user-form.js" defer></script>
 
   <!--fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +43,7 @@
             <div class="input-group">
                 <label for="nomecompleto">Nome Completo</label><br>
                 <input type="text" id="nomecompleto" name="nome completo" required><br>
+                <p id="nomecompleto-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
 
               <div class="input-group-flex">
@@ -52,7 +54,7 @@
 
                 <div>
                   <label for="naturalidade">Naturalidade</label><br>
-                  <select class="select-1" name="naturalidade" id="naturalidade" required>
+                  <select class="select" name="naturalidade" id="naturalidade" required>
                     <option value="" selected> Escolha </option>
                     <option value="brasil">Brasileiro</option>
                     <option value="estrangeiro">Estrangeiro</option>
@@ -64,8 +66,14 @@
               <div class="input-group">
                 <label for="cpf">CPF</label><br>
                 <input type="text" name="cpf" id="cpf" required><br>
+                <p id="cpf-helper" class="helper-text">Mensagem de ajuda</p>
+              </div>
+              <div class="input-group">
                 <label for="rg">RG</label><br>
                 <input type="text" name="rg" id="rg" required><br>
+                <p id="rg-helper" class="helper-text">Mensagem de ajuda</p>
+              </div>
+              <div class="input-group">
                 <label for="endereco">Endereço</label><br>
                 <input type="text" name="endereço" id="endereco" required><br>
               </div>
@@ -84,6 +92,8 @@
               <div class="input-group">
                 <label for="complemento">Complemento</label><br>
                 <input type="text" name="complemento" id="complemento"><br>
+              </div>
+              <div class="input-group">
                 <label for="bairro">Bairro</label><br>
                 <input type="text" name="bairro" id="bairro"><br>
               </div>
@@ -95,7 +105,7 @@
                 </div>
                 <div>
                   <label for="estado">Estado</label><br>
-                    <select class="select-1" name="estado" id="estado" required>
+                    <select class="select" name="estado" id="estado" required>
                       <option value="" selected> Escolha </option>
                       <option value="AC">Acre</option>
                       <option value="AL">Alagoas</option>
@@ -131,12 +141,21 @@
               <div class="input-group">
                 <label for="telefone">Telefone</label><br>
                 <input type="tel" name="telefone" id="telefone" required><br>
+              </div>
+              <div class="input-group">
                 <label for="email">Email</label><br>
                 <input type="email" name="email" id="email" required><br>
+                <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+              </div>
+              <div class="input-group">
                 <label for="senha">Senha</label><br>
                 <input type="password" name="senha" id="senha" required><br>
-                <label for="senha">Confirmar Senha</label><br>
-                <input type="password" name="confirmar senha" id="senha" required><br>
+                <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+              </div>
+              <div class="input-group">  
+                <label for="confirm-senha">Confirmar Senha</label><br>
+                <input type="password" name="confirmar senha" id="confirm-senha" required><br>
+                <p id="confirm-senha-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
 
               <div class="button-flex">

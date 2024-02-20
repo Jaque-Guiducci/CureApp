@@ -36,12 +36,17 @@ form{
     margin-top: 25px;
     font-size: 14px;
 }
+
+form > div{
+    margin-top: 10px;
+}
+
 input{
     height: 34px;
     background-color:  #FCFAEF;
     border: 2px solid #D9D9D9;
-    margin-top: 3px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .input-group{
@@ -89,12 +94,12 @@ button{
     background-color: #D88A77;
     border: none;
 }
-.select-1{
+.select{
     height: 36px;
     background-color:  #FCFAEF;
     border: 2px solid #D9D9D9;
-    margin-top: 3px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 102%;
 }
 
@@ -130,4 +135,40 @@ button{
     .input-group-flex div{
         width: 100%;
     }
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+/* .required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+} */
+  
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+  
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+  
+.visible {
+    display: block;
 }
