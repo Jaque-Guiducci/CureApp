@@ -82,6 +82,7 @@
                 <div>
                   <label for="cep">CEP</label><br>
                   <input type="text" name="cep" id="cep" required><br>
+                  <p id="cep-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div>
                   <label for="num">N°</label><br>
@@ -95,7 +96,7 @@
               </div>
               <div class="input-group">
                 <label for="bairro">Bairro</label><br>
-                <input type="text" name="bairro" id="bairro"><br>
+                <input type="text" name="bairro" id="bairro" required><br>
               </div>
               
               <div class="input-group-flex">
@@ -140,7 +141,7 @@
 
               <div class="input-group">
                 <label for="telefone">Telefone</label><br>
-                <input type="tel" name="telefone" id="telefone" required><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="Ex: (ddd) 90000-0000" required><br>
               </div>
               <div class="input-group">
                 <label for="email">Email</label><br>
@@ -159,8 +160,8 @@
               </div>
 
               <div class="button-flex">
-                <button class="butype-1" type="submit">Cancelar</button>
-                <button class="butype-2" type="submit">Salvar</button>
+                <button class="butype-1" type="reset">Cancelar</button>
+                <button class="butype-2" onclick="validarCampos()">Salvar</button>
               </div>
           </form>
         </div>
