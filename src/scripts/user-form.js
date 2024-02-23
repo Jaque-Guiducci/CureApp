@@ -1,200 +1,20 @@
-// // ------------ FUNÇÕES GERAIS ------------- //
-// // function mostrarPopup(input, label){
-// //     //Mostrar popup de campo obrigatório
-// //     input.addEventListener("focus", function(){
-// //         label.classList.add("required-popup")
-// //     })
-
-// //     // ocultar popup de campo obrigatório
-// //     input.addEventListener("blur", function(){
-// //         label.classList.remove("required-popup")
-// //     })
-// // }
-
-// function estilizarInputCorreto(input, helper){
-//     helper.classList.remove("visible");
-//     input.classList.remove("error");
-// }
-
-// function estilizarInputIncorreto(input, helper){
-//     helper.classList.add("visible");
-//     input.classList.add("error");   
-// }
-
-// // ---- Validando Nome Completo ---- //
-
-// let nomeCompletoInput = document.getElementById("nomecompleto");
-// let nomeCompletoHelper = document.getElementById("nomecompleto-helper");
-
-// // Validar valor do input
-// nomeCompletoInput.addEventListener("change", (e)=> {
-//     let valor = e.target.value
-
-//     if (valor.length < 15){
-//         // Estilos dinamicos caso o valor não seja válido
-//         nomeCompletoHelper.innerText = "Seu nome completo deve ter 15 ou mais caracteres";
-//         estilizarInputIncorreto(nomeCompletoInput, nomeCompletoHelper);
-//         inputsCorretos.username = false;
-//     } else {
-//         //Estilos dinamicos caso o valor seja válido
-//         estilizarInputCorreto(nomeCompletoInput, nomeCompletoHelper);
-//         inputsCorretos.username = true;
-//     }
-// })
-
-// let dataNascimentoInput = document.getElementById("datanascimento");
-// let dataNascimentoHelper = document.getElementById("datanascimento-helper")
-
-// dataNascimentoInput.addEventListener("click", (e)=> {
-//     console.log(e.target.value)
-//     let valor = e.target.value
-
-//     if (valor.length === ''){
-//         console.log('entrou no if')
-//         dataNascimentoHelper.innerText = "O campo não pode estar vazio";
-//         estilizarInputIncorreto(dataNascimentoInput, dataNascimentoHelper);
-//         inputsCorretos.datanascimento = false;
-//     } else {
-//         inputsCorretos = true;
-//     }
-// })
-
-
-// // ---- Validando CPF ---- //
-
-// let cpfInput = document.getElementById("cpf");
-// let cpfHelper = document.getElementById("cpf-helper");
-
-// cpfInput.addEventListener("change", (e)=> {
-//     let valor = e.target.value
-//     console.log(valor);
-
-//     if (valor.length < 11){
-//         // Estilos dinâmicos caso o valor não seja válido
-//         cpfHelper.innerText = "Seu CPF deve conter 11 dígitos";
-//         estilizarInputIncorreto(cpfInput, cpfHelper);
-//     } else {
-//          //Estilos dinamicos caso o valor seja válido
-//          estilizarInputCorreto(cpfInput, cpfHelper);
-//     }
-// })
-
-// // ---- Validando RG ---- //
-
-// let rgInput = document.getElementById("rg");
-// let rgHelper = document.getElementById("rg-helper");
-
-
-// rgInput.addEventListener("change", (e)=> {
-//     let valor = e.target.value
-
-//     if (valor.length < 9){
-//         // Estilos dinâmicos caso o valor não seja válido
-//         rgHelper.innerText = "Seu RG deve conter no mínimo 9 dígitos";
-//         estilizarInputIncorreto(rgInput, rgHelper);
-//     } else {
-//          //Estilos dinamicos caso o valor seja válido
-//          estilizarInputCorreto(rgInput, rgHelper);
-//     }
-// })
-
-// // ---- Validando Email ---- //
-
-// let emailInput = document.getElementById("email");
-// let emailHelper = document.getElementById("email-helper");
-
-
-// emailInput.addEventListener("change", (e)=> {
-//     let valor = e.target.value
-
-//     if(valor.includes("@") && valor.includes(".com")){
-//         //Estilos dinamicos caso o valor seja válido
-//         estilizarInputCorreto(emailInput, emailHelper);
-//         inputsCorretos.email = true;
-//     } else {
-//         //Estilos dinamicos caso o valor não seja válido
-//         estilizarInputIncorreto(emailInput, emailHelper);
-//         emailHelper.innerText = "E-mail inválido";
-//         inputsCorretos.email = false;
-//     }
-// })
-
-// // ---- Validando Senha ---- //
-// let senhaInput = document.getElementById("senha");
-// let senhaHelper = document.getElementById("senha-helper");
-
-// senhaInput.addEventListener("blur", (e)=> {
-//    let valor = e.target.value
-//    if(valor == ""){
-//        //Estilos dinâmicos caso os valores sejam inválidos
-//        senhaHelper.innerText = "O campo senha não pode estar vazio"
-//        estilizarInputIncorreto(senhaInput, senhaHelper);
-//        inputsCorretos.senha = false;
-//    } else{
-//        estilizarInputCorreto(senhaInput, senhaHelper);
-//        inputsCorretos.senha = true;
-//    }
-// })
-
-
-// let confirmSenhaInput = document.getElementById("confirm-senha");
-// let confirmSenhaHelper = document.getElementById("confirm-senha-helper");
-
-// confirmSenhaInput.addEventListener("change", (e)=> {
-//    let valorConfirmaSenha = e.target.value
-//    if(valorConfirmaSenha == senhaInput.value){
-//        estilizarInputCorreto(confirmSenhaInput, confirmSenhaHelper);
-//        inputsCorretos.confirmaSenha = true;
-//    } else {
-//        confirmSenhaHelper.innerText = "As senhas precisam ser iguais"
-//        estilizarInputIncorreto(confirmSenhaInput, confirmSenhaHelper);
-//        inputsCorretos.confirmaSenha = false;
-//    }
-// })
-
-
-// let btnSubmit = document.querySelector('button[type="submit"]');
-// let inputsCorretos = {
-//     nomecompleto: false,
-//     datanascimento: false,
-//     naturalidade: false,
-//     cpf: false,
-//     rg: false,
-//     endereco: false,
-//     cep: false,
-//     num: false,
-//     bairro: false,
-//     cidade: false,
-//     estado: false,
-//     telefone: false,
-//     email: false,
-//     senha: false,
-//     confirmaSenha: false
-// }
-
-// btnSubmit.addEventListener("click", (e)=> {
-//     if(inputsCorretos.nomecompleto == false ||
-//         inputsCorretos.datanascimento == false ||
-//         inputsCorretos.naturalidade == false ||
-//         inputsCorretos.cpf == false ||
-//         inputsCorretos.rg == false ||
-//         inputsCorretos.endereco == false ||
-//         inputsCorretos.cep == false ||
-//         inputsCorretos.num == false ||
-//         inputsCorretos.bairro == false ||
-//         inputsCorretos.cidade == false ||
-//         inputsCorretos.estado == false ||
-//         inputsCorretos.telefone == false ||
-//         inputsCorretos.email == false || 
-//         inputsCorretos.senha == false ||
-//         inputsCorretos.confirmaSenha == false){
-//         e.preventDefault()
-//         alert("Os campos obrigatórios precisam ser preenchidos corretamente")
-//     }else{
-//         alert("Formulário enviado com sucesso")
-//     }
-// })
-
+let inputsCorretos = {
+    nomecompleto: false,
+    datanascimento: false,
+    naturalidade: false,
+    cpf: false,
+    rg: false,
+    endereco: false,
+    cep: false,
+    num: false,
+    bairro: false,
+    cidade: false,
+    estado: false,
+    telefone: false,
+    email: false,
+    senha: false,
+    confirmaSenha: false
+}
 
 function estilizarInputCorreto(input, helper){
     helper.classList.remove("visible");
@@ -209,79 +29,237 @@ function estilizarInputIncorreto(input, helper){
 function validarCampos() {
     
     //Validar nome completo
-let nomeCompletoInput = document.getElementById("nomecompleto");
-let nomeCompletoHelper = document.getElementById("nomecompleto-helper")
+    let nomeCompletoInput = document.getElementById("nomecompleto");
+    let nomeCompletoHelper = document.getElementById("nomecompleto-helper")
 
-if (nomeCompletoInput.value.length < 15  && nomeCompletoInput.value.length > 0){
-    nomeCompletoHelper.innerText = "Seu nome completo deve ter 15 ou mais caracteres";
-    estilizarInputIncorreto(nomeCompletoInput, nomeCompletoHelper);
+    if (nomeCompletoInput.value.length < 15  && nomeCompletoInput.value === ""){
+        nomeCompletoHelper.innerText = "Seu nome completo deve ter 15 ou mais caracteres";
+        estilizarInputIncorreto(nomeCompletoInput, nomeCompletoHelper);
 
-    setTimeout(() =>{
-        estilizarInputCorreto(nomeCompletoInput, nomeCompletoHelper);
-    }, 5000);
-}
+        setTimeout(() =>{
+            estilizarInputCorreto(nomeCompletoInput, nomeCompletoHelper);
+        }, 5000);
+    } else if (nomeCompletoInput.value.length >= 15) {
+        inputsCorretos.nomecompleto = true;
+    }
 
+    //Validar Data de Nascimento
+     let datanascimentoInput = document.getElementById("datanascimento");
+     let datanascimentoHelper = document.getElementById("datanascimento-helper");
+
+    if (datanascimentoInput.value === ""){
+        datanascimentoHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(datanascimentoInput, datanascimentoHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(datanascimentoInput, datanascimentoHelper);
+        }, 5000);
+    } else if (datanascimentoInput.value !== ""){
+        inputsCorretos.datanascimento = true;
+    }
+    
+    // Validar Naturalidade
+    let naturalidadeInput = document.getElementById("naturalidade");
+    let naturalidadeHelper = document.getElementById("naturalidade-helper");
+
+   if (naturalidadeInput.value === ""){
+        naturalidadeHelper.innerText = "O campo não pode estar vazio";
+       estilizarInputIncorreto(naturalidadeInput, naturalidadeHelper);
+       setTimeout(() =>{
+           estilizarInputCorreto(naturalidadeInput, naturalidadeHelper);
+       }, 5000);
+   } else if (naturalidadeInput.value !== ""){
+       inputsCorretos.naturalidade = true;
+   }
+
+    
     //Validar CPF
     let cpfInput = document.getElementById("cpf");
     let cpfHelper = document.getElementById("cpf-helper");
-    if(cpfInput.value.length < 11 && cpfInput.value.length > 0){
+    if(cpfInput.value.length !== 11 && cpfInput.value === ""){
         cpfHelper.innerText = "CPF inválido. Verifique a quantidade de caracteres";
         estilizarInputIncorreto(cpfInput, cpfHelper);
 
         setTimeout(() => {
             estilizarInputCorreto(cpfInput, cpfHelper);
         }, 5000);
-    } 
+    } else if (cpfInput.value.length === 11) {
+        inputsCorretos.cpf = true;
+    }
 
     // Validar RG
     let rgInput = document.getElementById("rg");
     let rgHelper = document.getElementById("rg-helper");
-    if(rgInput.value.length < 11 && rgInput.value.length > 0){
+    if(rgInput.value.length < 10 && rgInput.value === ""){
         rgHelper.innerText = "RG inválido. Verifique a quantidade de caracteres";
         estilizarInputIncorreto(rgInput, rgHelper);
 
         setTimeout(() => {
             estilizarInputCorreto(rgInput, rgHelper);
         }, 5000);
+    } else if (rgInput.value.length >= 10 && rgInput.value.length <=13) {
+        inputsCorretos.rg = true;
     }
+
+    // Validar Endereço
+    let enderecoInput = document.getElementById("endereco");
+    let enderecoHelper = document.getElementById("endereco-helper");
+ 
+    if (enderecoInput.value === ""){
+        enderecoHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(enderecoInput, enderecoHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(enderecoInput, enderecoHelper);
+        }, 5000);
+    } else if (enderecoInput.value !== ""){
+        inputsCorretos.endereco = true;
+    }
+
+    // Validar CEP
+    let cepInput = document.getElementById("cep");
+    let cepHelper = document.getElementById("cep-helper");
+ 
+    if (cepInput.value === ""){
+        cepHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(cepInput, cepHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(cepInput, cepHelper);
+        }, 5000);
+    } else if (cepInput.value !== "" && cepInput.value.length === 8){
+        inputsCorretos.cep = true;
+    }
+
+    // Validar Número
+    let numInput = document.getElementById("num");
+    let numHelper = document.getElementById("num-helper");
+ 
+    if (numInput.value === ""){
+        numHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(numInput, numHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(numInput, numHelper);
+        }, 5000);
+    } else if (numInput.value !== ""){
+        inputsCorretos.num = true;
+    }
+
+    // Validar Bairro
+    let bairroInput = document.getElementById("bairro");
+    let bairroHelper = document.getElementById("bairro-helper");
+ 
+    if (bairroInput.value === ""){
+        bairroHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(bairroInput, bairroHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(bairroInput, bairroHelper);
+        }, 5000);
+    } else if (bairroInput.value !== ""){
+        inputsCorretos.bairro = true;
+    }
+
+    // Validar Cidade
+    let cidadeInput = document.getElementById("cidade");
+    let cidadeHelper = document.getElementById("cidade-helper");
+ 
+    if (cidadeInput.value === ""){
+        cidadeHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(cidadeInput, cidadeHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(cidadeInput, cidadeHelper);
+        }, 5000);
+    } else if (cidadeInput.value !== ""){
+        inputsCorretos.cidade = true;
+    }
+
+    // Validar Estado
+    let estadoInput = document.getElementById("estado");
+    let estadoHelper = document.getElementById("estado-helper");
+ 
+    if (estadoInput.value === ""){
+        estadoHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(estadoInput, estadoHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(estadoInput, estadoHelper);
+        }, 5000);
+    } else if (estadoInput.value !== ""){
+        inputsCorretos.estado = true;
+    }
+
+    // Validar Telefone
+    let telefoneInput = document.getElementById("telefone");
+    let telefoneHelper = document.getElementById("telefone-helper");
+ 
+    if (telefoneInput.value === ""){
+        telefoneHelper.innerText = "O campo não pode estar vazio";
+        estilizarInputIncorreto(telefoneInput, telefoneHelper);
+        setTimeout(() =>{
+            estilizarInputCorreto(telefoneInput, telefoneHelper);
+        }, 5000);
+    } else if (telefoneInput.value !== "" && telefoneInput.value.length === 11){
+        inputsCorretos.telefone = true;
+    }
+
 
     // Validar Email
     let emailInput = document.getElementById("email");
     let emailHelper = document.getElementById("email-helper");
 
-    if(emailInput.value.includes("@") && emailInput.value.includes(".com")){
-        estilizarInputCorreto(emailInput, emailHelper);
-    } else {
-        emailHelper.innerText = "Email inválido";
+    let emailvalidado = emailInput.value.includes("@") && emailInput.value.includes(".com")
+
+    if(emailvalidado === false || emailInput.value === "" ){
+        emailHelper.innerText = "Email inválido> Preencha corretamente.";
         estilizarInputIncorreto(emailInput, emailHelper);
 
         setTimeout(() => {
             estilizarInputCorreto(emailInput, emailHelper);
         }, 5000);
+    } else if (emailvalidado === true) {
+        inputsCorretos.email = true;
     }
     
     // Validar Senha
     let senhaInput = document.getElementById("senha");
     let senhaHelper = document.getElementById("senha-helper");
 
-    if(senhaInput.value == "" && senhaInput.value > 0){
-        senhaHelper.innerText = "O campo senha não pode estar vazio"
+    if(senhaInput.value === "" && senhaInput.value.length < 8){
+        senhaHelper.innerText = "Sua senha precisa ter 8 ou mais caracteres"
         estilizarInputIncorreto(senhaInput, senhaHelper);
 
         setTimeout(() => {
             estilizarInputCorreto(senhaInput, senhaHelper);
         }, 5000);
+    } else if(senhaInput.value.length >=8){
+        inputsCorretos.senha = true;
     }
 
     // Validar confirmação de senha
 
-    let confirmSenhaInput = document.getElementById("senha");
+    let confirmSenhaInput = document.getElementById("confirm-senha");
     let confirmSenhaHelper = document.getElementById("confirm-senha-helper");
 
-    if(confirmSenhaInput.value == senhaInput.value){
-        estilizarInputCorreto(confirmSenhaInput, confirmSenhaHelper);
-    } else {
-        confirmSenhaHelper.innerText = "Senhas não semelhantes"
+    if(confirmSenhaInput.value !== senhaInput.value || (confirmSenhaInput.value.length < 8 && confirmSenhaInput.value === "")){
+        confirmSenhaHelper.innerText = "Senhas não semelhantes ou menor que 8 caracteres"
         estilizarInputIncorreto(confirmSenhaInput, confirmSenhaHelper);
+        
+        setTimeout(() => {
+            estilizarInputCorreto(confirmSenhaInput, confirmSenhaHelper);
+        }, 5000);
+    } else if (confirmSenhaInput.value === senhaInput.value && confirmSenhaInput.value.length >= 8) {
+        inputsCorretos.confirmaSenha = true;
     }
+
+    console.log(inputsCorretos)
+    
+    for (let atributo in inputsCorretos) {
+        if (inputsCorretos[atributo] === false) {
+            return
+        }
+    }
+
+    window.location = "perfil.html"
+}
+
+
+
+function resetar(){
+    window.location = "/index.html"
 }

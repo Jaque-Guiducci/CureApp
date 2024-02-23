@@ -42,51 +42,55 @@
               
             <div class="input-group">
                 <label for="nomecompleto">Nome Completo</label><br>
-                <input type="text" id="nomecompleto" name="nome completo" required><br>
+                <input type="text" id="nomecompleto" name="nome completo"><br>
                 <p id="nomecompleto-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
 
               <div class="input-group-flex">
                 <div>
                   <label for="datanascimento">Data de Nascimento</label><br>
-                  <input type="date" id="datanascimento" name="data de nascimento" required><br>
+                  <input type="date" id="datanascimento" name="data de nascimento" ><br>
+                  <p id="datanascimento-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
 
                 <div>
                   <label for="naturalidade">Naturalidade</label><br>
-                  <select class="select" name="naturalidade" id="naturalidade" required>
+                  <select class="select" name="naturalidade" id="naturalidade" >
                     <option value="" selected> Escolha </option>
                     <option value="brasil">Brasileiro</option>
                     <option value="estrangeiro">Estrangeiro</option>
                   </select><br>
+                  <p id="naturalidade-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
 
               </div>
               
               <div class="input-group">
                 <label for="cpf">CPF</label><br>
-                <input type="text" name="cpf" id="cpf" required><br>
+                <input type="text" name="cpf" id="cpf" ><br>
                 <p id="cpf-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
               <div class="input-group">
                 <label for="rg">RG</label><br>
-                <input type="text" name="rg" id="rg" required><br>
+                <input type="text" name="rg" id="rg" ><br>
                 <p id="rg-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
               <div class="input-group">
                 <label for="endereco">Endereço</label><br>
-                <input type="text" name="endereço" id="endereco" required><br>
+                <input type="text" name="endereço" id="endereco" ><br>
+                <p id="endereco-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
              
               <div class="input-group-flex">
                 <div>
                   <label for="cep">CEP</label><br>
-                  <input type="text" name="cep" id="cep" required><br>
+                  <input type="text" name="cep" id="cep" ><br>
                   <p id="cep-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div>
                   <label for="num">N°</label><br>
-                  <input type="text" name="num" id="num" required><br>
+                  <input type="text" name="num" id="num" ><br>
+                  <p id="num-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
               </div>
               
@@ -96,17 +100,19 @@
               </div>
               <div class="input-group">
                 <label for="bairro">Bairro</label><br>
-                <input type="text" name="bairro" id="bairro" required><br>
+                <input type="text" name="bairro" id="bairro" ><br>
+                <p id="bairro-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
               
               <div class="input-group-flex">
                 <div>
                   <label for="cidade">Cidade</label><br>
-                  <input type="text" name="cidade" id="cidade" required><br>
+                  <input type="text" name="cidade" id="cidade" ><br>
+                  <p id="cidade-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div>
                   <label for="estado">Estado</label><br>
-                    <select class="select" name="estado" id="estado" required>
+                    <select class="select" name="estado" id="estado" >
                       <option value="" selected> Escolha </option>
                       <option value="AC">Acre</option>
                       <option value="AL">Alagoas</option>
@@ -136,32 +142,34 @@
                       <option value="SP">São Paulo</option>
                       <option value="TO">Tocantins</option>
                     </select>
+                    <p id="estado-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
               </div>
 
               <div class="input-group">
                 <label for="telefone">Telefone</label><br>
-                <input type="tel" name="telefone" id="telefone" placeholder="Ex: (ddd) 90000-0000" required><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="Ex: (ddd) 90000-0000" ><br>
+                <p id="telefone-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
               <div class="input-group">
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" required><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email" ><br>
                 <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
               <div class="input-group">
                 <label for="senha">Senha</label><br>
-                <input type="password" name="senha" id="senha" required><br>
+                <input type="password" name="senha" id="senha" ><br>
                 <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
               <div class="input-group">  
                 <label for="confirm-senha">Confirmar Senha</label><br>
-                <input type="password" name="confirmar senha" id="confirm-senha" required><br>
+                <input type="password" name="confirmar senha" id="confirm-senha" ><br>
                 <p id="confirm-senha-helper" class="helper-text">Mensagem de ajuda</p>
               </div>
 
               <div class="button-flex">
-                <button class="butype-1" type="reset">Cancelar</button>
-                <button class="butype-2" onclick="validarCampos()">Salvar</button>
+                <button class="butype-1" type="button" onclick="resetar()" id="reset">Cancelar</button>
+                <button class="butype-2" type="button" onclick="validarCampos()">Salvar</button>
               </div>
           </form>
         </div>

@@ -45,7 +45,8 @@ class CureHeader extends HTMLElement {
 				pharmacy: "./src/pages/pharma-form.html",
 				user: "./src/pages/user-form.html",
 				campaign: "./src/pages/campaign.html",
-				login: "./src/pages/login.html"
+				login: "./src/pages/login.html",
+				profile: "./src/pages/perfil.html"
 			},
 			page: {
 				home: "../../index.html",
@@ -53,7 +54,8 @@ class CureHeader extends HTMLElement {
 				pharmacy: "./pharma-form.html",
 				user: "./user-form.html",
 				campaign: "./campaign.html",
-				login: "./login.html"
+				login: "./login.html",
+				profile: "./perfil.html"
 			}	
 		}
 		const labels = {
@@ -61,7 +63,8 @@ class CureHeader extends HTMLElement {
 			pharmacy: "Farmácia parceira",
 			user: "Pacientes",
 			campaign: "Campanhas",
-			login: "Login"
+			login: "Login",
+			profile: "Perfil"
 		}
 		const Tag = document.createElement('li')
 		const Link = document.createElement('a')
