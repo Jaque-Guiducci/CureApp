@@ -9,7 +9,7 @@ body{
     background-color: #ffffffa0;
     width: 62vw;
     border-radius: 30px;
-    height: 81vh;
+    /* height: 81vh; */
     box-shadow: 1px 1px 17px 0px rgba(0,0,0,0.40);
 }
 
@@ -33,6 +33,7 @@ body{
     height: 120px;
     border-radius: 30px;
     margin-bottom: 10px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .name-perfil{
@@ -75,6 +76,7 @@ body{
 .campaign-status{
     font-family: 'Bebas Neue', sans-serif;
     margin: 10px;
+    color: #3E8A9B;
 }
 
 .campaign-number{
@@ -163,4 +165,100 @@ button{
 
 .ajust{
     margin: 10px 
+}
+
+/* Celulares */
+
+@media (max-width: 450px){
+    body{
+        background-color: #FCFAEF;
+        box-shadow: none;
+    }
+
+    .first-display{
+       display: block; 
+       box-shadow: none;
+       background-color: #FCFAEF;
+       margin: 0px;
+       width: 100vw;
+       border-radius: 0px;
+    }
+    
+    .sect-one{
+        border-right: none;
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+    }
+
+    .relative-image{
+        width: 100%;
+        position: static;
+        text-align: center;
+        margin-bottom: 160px;
+        margin-top: 20px;
+
+    }
+
+    .image-perfil{
+        width: 100px;
+        height: 150px;
+        border-radius: 22px;
+    }
+
+    .name-perfil{
+        font-family: 'Bebas Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        color: #073142;
+    }
+
+    .options-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px 0px;
+    }
+
+    .options-flex img{
+        padding: 0px 13px 10px;
+        width: 28px;
+    }
+
+    .options-flex a{
+        padding: 0px 10px 10px;
+        font-size: 13px;
+    }
+
+    .campaign-flex{
+        margin-top: 0px;
+        padding: 15px;
+    }
+    
+    .item-campanha {
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .campaign-number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #D88A77;
+        background-color: #D88A77;
+        border-radius: 50px;
+        padding: 10px;
+        color: #FCFAEF;
+        font-size: 16px;
+        width: 8px;
+        height: 8px;
+    }
+    
+
+    .sect-two{
+        margin: 0px;
+        padding: 2px 25px;
+    }
 }
