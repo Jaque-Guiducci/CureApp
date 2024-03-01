@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
 
     <!--styles-->
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../scripts/login.js" defer></script>
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,20 +18,25 @@
     <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
 </head>
 <cure-header
-    options="home,suporter,pharmacy,user,campaign,login"
+    options="home,suporter,pharmacy,user,login"
     origin="page"
 ></cure-header>
 <body>
     <div class="login-container">
         <h2>Login</h2>
         <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="username">E-mail:</label>
+            <input type="text" id="username" name="username">
+            <p id="username-helper" class="helper-text" >Mensagem de ajuda</p>
+
             
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            <p id="password-helper" class="helper-text" >Mensagem de ajuda</p>
             
-            <button type="submit">Login</button>
+            <button id="login" type="button" onclick="validarLogin()">Login</button>
+
+            <a href="../pages/user-form.html">Cadastre-se</a>
         </form>
     </div>
     <footer>
