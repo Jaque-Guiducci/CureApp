@@ -1,70 +1,85 @@
 body{
-    margin: 0;
-    padding: 0;
-    background-image: url('../assets/images/young-pharmacist.png');
-    background-size:cover;
-    background-position: center;
-    color: #073142;
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/images/young-pharmacist.png');
+  background-size:cover;
+  background-position: center;
+  color: #073142;
+}
 
-  .box {
-    height: 100%;
-  }
+.box {
+  height: 100%;
+}
 
-  label {
-    color: var(--DarkBlue, #073142);
-    font-family: Bellota Text;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    /* 228.571% */
+label {
+  color: var(--DarkBlue, #073142);
+  font-family: Bellota Text;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+ line-height: 32px;
+  /* 228.571% */
 }
   
-  form fieldset{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(252, 250, 239, 0.4);
-    backdrop-filter: blur(10px);
-    margin: 5%;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    width: 50%;
-  }
+form fieldset{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(252, 250, 239, 0.4);
+  backdrop-filter: blur(10px);
+  margin: 5%;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  width: 50%;
+}
 
-  .form-sections {
-    display: flex;
-    flex-direction: column;
-  }
+.form-sections {
+  display: flex;
+  flex-direction: column;
+}
 
-  .section-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-  }
+.section-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
 
-  button {
-    width: 200px;
-    height: 39px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    text-align: center;
-    font-family: Bellota Text;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    border: none;
-    background: var(--PaleRed, #D88A77);
-    color: var(--BaseWhite, #FCFAEF);
-  }
+button {
+  width: 200px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Bellota Text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  border: none;
+  background: var(--PaleRed, #D88A77);
+  color: var(--BaseWhite, #FCFAEF);
+}
 
-  button:hover {
-    color: #D88A77;
-    background-color: #FCFAEF;
-  }
+button:hover {
+  color: #D88A77;
+  background-color: #FCFAEF;
+}
 
-  
+/* Estilizações dinâmicas */
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+.helper-text {
+  display: none;
+  font-size: .8rem;
+  color: darkred;
+}
+
+.visible {
+  display: block;
+}
