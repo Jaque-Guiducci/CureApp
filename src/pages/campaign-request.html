@@ -32,13 +32,14 @@
                 </div>
             
                 <div class="select-pharma">
-                    <label for="date">Selecione até 03 farmácias parceiras: </label>
-                    <select forma="select" class="input-stardard">
-                        <option value="valor1">Pharma One</option>
-                        <option value="valor2">Pharma Two</option>
-                        <option value="valor3">Pharma Three</option>
-                        <option value="valor4" selected>Pharma Four</option>
-                    </select>
+                    <label for="pharm">Selecione até 03 farmácias parceiras: </label>
+                    <select name="pharm" class="" id="pharm-option" multiple size="06">
+                        <option value="valor1">Drogaria Pacheco</option>
+                        <option value="valor2">Drogaria Indiana</option>
+                        <option value="valor3">Drogaria São Paulo</option>
+                        <option value="valor4">Drogaria Araújo </option>
+                    </select>                   
+                    
                 </div>
 
                 <div class="form_text">
@@ -75,10 +76,10 @@
                 </div>                    
             </form>
     
-            <div class="button">
-                <button type="submit" class="form-btn">SOLICITAR MEDICAÇÃO</button>
+            <div class="button-flex">
+                <button class="butype-1" type="button" onclick="resetar()" id="reset">Cancelar</button>
+                <button class="butype-2" type="button" onclick="validarCampos()">Salvar</button>
             </div>
-        </div>
     </main>
     <footer>
         <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">

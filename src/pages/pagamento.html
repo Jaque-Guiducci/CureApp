@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
+    <script defer src="../components/CureHeader/CureHeader.js"></script>
+    <script defer src="../scripts/pay-form.js"></script>
 </head>
 
 <body>
@@ -34,21 +36,24 @@
                         <div class="form-name">
                             <label for="name">Nome Completo:</label>
                             <input type="text" id="name" class="input-stardard" placeholder="Nome Completo" maxlength="50">
+                            <p id="name-helper" class="helper-text">Mensagem de ajuda</p>
                         </div>
                         <legend>Caso queira acompanhar o andamento da campanha, informe seus dados de contato,
                             prometemos não mandar spam! </legend>
                         <div class="form-email">
                             <label for="email">E-mail: </label>
                             <input type="email" id="email" class="input-stardard" placeholder="email@dominio.com">
+                            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
                         </div>
 
                         <div class="form-tel">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" class="input-stardard" placeholder="(00)00000000">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" class="input-stardard" placeholder="(00)00000000">
+                            <p id="phone-helper" class="helper-text">Mensagem de ajuda</p>
                         </div>
 
                         <div class="form-forma">
-                            <label for="date">Forma de pagamento</label>
+                            <label for="select">Forma de pagamento</label>
                             <select forma="select" class="input-stardard">
                                 <option value="valor1">Cartão de Crédito</option>
                                 <option value="valor2" selected>Pix</option>
@@ -96,7 +101,6 @@
     <footer>
         <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
     </footer>
-    <script defer src="../components/CureHeader/CureHeader.js"></script>
     <script src='https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'></script>
 </body>
 
