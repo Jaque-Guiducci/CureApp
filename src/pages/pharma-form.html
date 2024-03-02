@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <!--settings-->
   <meta charset="UTF-8">
@@ -16,62 +17,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <cure-header 
-      options="home,suporter,pharmacy,user,campaign,login"
-      origin="page"
-    ></cure-header>
-    <main id="root">
-      <div id="subscription-pharma-page">
-        <div class="box">
-        <form action="">
-            <fieldset>
-                <br>
-                <div class="form-sections">
-                    <label for="nome" class="labelInput">Nome Fantasia</label>
-                    <input type="text" name="nome" id="nome" class="input-stardard" required>
-                </div>
-                <br>
-                <div class="form-sections">
-                    <label for="razao">Razão Social</label>
-                    <input type="text" name="razao" id="razao" class="input-stardard" required>
-                </div>
-                <br>
-                <div class="form-sections">
-                    <label for="cnpj">CNPJ</label>
-                    <input type="text" name="cnpj" id="cnpj" class="input-stardard" required>
-                </div>
-                <br>
-                <div class="form-sections">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" name="endereco" id="endereco" class="input-stardard" required>
-                    <label for="endereco">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" class="input-stardard" size="5"required>
-                    <label for="estado">Estado</label>
-                    <input type="text" name="estado" id="estado" class="input-stardard" size="5"required>
-                </div>
-                <br>
-                <div class="form-sections">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" id="telefone" class="input-stardard" required>
-                </div>
-                <br>
-                <div class="form-sections">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" class="input-stardard" required>
-                </div>
-                <br>
-                <div class="form-sections">
-                    <label for="responsavel">Responsável</label>
-                    <input type="text" name="responsavel" id="responsavel" class="input-stardard" required>
-                </div>
-                <div class="section-buttons">
-                  <button onclick="window.location.href='../../index.html'">Voltar</button> 
-                  <button>Salvar</button>
-                </div>
-            </fieldset>  
-        </form>
+  <cure-header options="home,suporter,pharmacy,user,campaign,login" origin="page"></cure-header>
+  <main>
+    <div class="subscription-pharma-page">
+      <div class="pharma-img"></div>
+      <div class="first-box">
+        <div class="form-title">
+          <h1></h1>
         </div>
+        <div class="box">
+          <form action="">
+            <fieldset>
+              <br>
+              <div class="form-sections">
+                <label for="nome" class="labelInput">Nome Fantasia</label>
+                <input type="text" name="nome" id="nome" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="razao">Razão Social</label>
+                <input type="text" name="razao" id="razao" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" name="cnpj" id="cnpj" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" class="input-stardard" required>
+                <label for="endereco">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="input-stardard" size="5" required>
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" class="input-stardard" size="5" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="responsavel">Responsável</label>
+                <input type="text" name="responsavel" id="responsavel" class="input-stardard" required>
+              </div>
+                <div class="button-flex">
+                  <button class="butype-1" type="button" onclick="resetar()" id="reset">Cancelar</button>
+                  <button class="butype-2" type="button" onclick="validarCampos()">Salvar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
