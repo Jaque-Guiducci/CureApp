@@ -68,6 +68,7 @@ body {
 
 .login-container form {
   margin-top: 20px;
+  width: 18rem;
 }
 
 .login-container label {
@@ -80,18 +81,6 @@ body {
 
 }
 
-p {
-  color: #3E8A9B;
-  font-family: Bellota Text;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  width: 20rem;
-  line-height: 1.5rem;
-  /* 228.571% */
-  text-align: justify;
-}
-
 .login-container input[type="text"],
 .login-container input[type="password"] {
   width: 100%;
@@ -102,7 +91,7 @@ p {
   background: var(--BaseWhite, #FCFAEF);
 }
 
-.login-container button[type="submit"] {
+.login-container button{
   width: 100%;
   padding: 10px;
   border: none;

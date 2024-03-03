@@ -28,11 +28,14 @@
         <form class="form-login">
             <div class="login-icon"></div>
             <h2>Login</h2>
-            <p>Digite os seus dados de acesso no campo abaixo:</p>
-            <label for="username">Nome de Usuário:</label>
-            <input type="text" id="username" name="username" required placeholder="Digite o seu nome de usuário" autofocus="true" /> 
+            <label for="username">E-mail:</label>
+            <input type="text" id="username" name="username">
+            <p id="username-helper" class="helper-text" >Mensagem de ajuda</p>
+
+            
             <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required placeholder="Digite sua senha" autofocus="true" />
+            <input type="password" id="password" name="password">
+            <p id="password-helper" class="helper-text" >Mensagem de ajuda</p>
             
             <button id="login" type="button" onclick="validarLogin()">Login</button>
 
