@@ -76,6 +76,7 @@ button{
     border-radius: 15px;
     font-size: 16px;
 }
+
 .button-flex{
     display: flex;
     justify-content: space-around;
@@ -89,11 +90,21 @@ button{
     font-weight: bold;
     
 }
+
+.butype-1:hover{
+    background-color: white;
+}
+
 .butype-2{
     color: #FCFAEF;
     background-color: #D88A77;
     border: none;
 }
+
+.butype-2:hover{
+    background-color: #df7357;
+}
+
 .select{
     height: 36px;
     background-color:  #FCFAEF;
