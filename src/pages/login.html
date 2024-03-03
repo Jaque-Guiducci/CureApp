@@ -9,6 +9,8 @@
 
     <!--styles-->
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../scripts/login.js" defer></script>
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +19,7 @@
     <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
 </head>
 <cure-header
-    options="home,suporter,pharmacy,user,campaign,login"
+    options="home,suporter,pharmacy,user,login"
     origin="page"
 ></cure-header>
 <body>
@@ -32,7 +34,9 @@
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required placeholder="Digite sua senha" autofocus="true" />
             
-            <button type="submit">Login</button>
+            <button id="login" type="button" onclick="validarLogin()">Login</button>
+
+            <a href="../pages/user-form.html">Cadastre-se</a>
         </form>
     </div>
     <footer>

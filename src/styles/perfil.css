@@ -111,6 +111,10 @@ button{
     margin-bottom: 15px;
 }
 
+button:hover {
+    background-color: #126d91;
+}
+
 .sect-two{
     margin: 40px;
     padding: 2px 25px;
@@ -257,7 +261,7 @@ button{
     }
 
     .button-flex{
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     button{

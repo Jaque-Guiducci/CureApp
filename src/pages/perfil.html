@@ -11,6 +11,7 @@
     <!--styles-->
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/perfil.css">
+    <script src="../scripts/perfil.js" defer></script>
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-    <cure-header options="home,suporter,pharmacy,campaign" origin="page"></cure-header>
+    <cure-header options="home,suporter,pharmacy" origin="page"></cure-header>
     
     <main id="root">
         <div class="first-display" id="subscription-perfil-page">
@@ -58,8 +59,7 @@
                         </div>
                     </div>
                     <div class="button-flex">
-                        <button>Adicionar Farmácia</button>
-                        <button>Solicitar Medicamento</button>
+                        <button id="solicitar" type="button">Solicitar Medicamento</button>
                     </div>
                 </div>
             </section>
