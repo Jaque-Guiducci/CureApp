@@ -130,42 +130,46 @@ legend {
 }
 
 .card-input-more,
-.button  {
-    display: flex;
-    justify-content: space-between;
-    width: 457px;
-    gap: 0 0.5rem;
-}
-.button{
-    padding: 1rem 3.5rem;
-}
+
 .card-input-more .box-one,
 .box-two {
     display: flex;
     flex-direction: column;
 }
 
-.button .cancel {
-    color: var(--DarkBlue, #073142);
-    background: var(--BaseWhite, #FCFAEF);
-}
 
-.button .form-btn {
-    background: var(--PaleRed, #D88A77);
-    color: var(--BaseWhite, #FCFAEF);
-}
-
-.button button {
+button{
     width: 116px;
     height: 39px;
-    flex-shrink: 0;
     border-radius: 15px;
-    text-align: center;
-    font-family: Bellota Text;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    /* 200% */
+    margin: 0 4rem;
+ }
+
+.button-flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
+.butype-1{
+    border: 1px solid #073142;
+    color: #073142;
+    background-color: #FCFAEF;
+    font-weight: bold;
+    
+}
+
+.butype-1:hover{
+    background-color: white;
+}
+
+.butype-2{
+    color: #FCFAEF;
+    background-color: #D88A77;
+    border: none;
+}
+
+.butype-2:hover{
+    background-color: #df7357;
+}
