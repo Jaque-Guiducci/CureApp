@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <!--settings-->
   <meta charset="UTF-8">
@@ -18,108 +19,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/794c36fe09.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <cure-header 
-      options="home,suporter,pharmacy,user,login"
-      origin="page"
-    ></cure-header>
-    <main id="root">
-      <div id="subscription-pharma-page">
+  <cure-header options="home,suporter,pharmacy,user,campaign,login" origin="page"></cure-header>
+  <main>
+    <div class="subscription-pharma-page">
+      <div class="pharma-img"></div>
+      <div class="first-box">
+        <div class="form-title">
+          <h1></h1>
+        </div>
         <div class="box">
           <form action="">
-              <fieldset>
-                  <br>
-                  <div class="form-sections">
-                      <label for="nome" class="labelInput">Nome Fantasia</label>
-                      <input type="text" name="nome" id="nome" class="input-stardard">
-                      <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                      <label for="razao">Razão Social</label>
-                      <input type="text" name="razao" id="razao" class="input-stardard">
-                      <p id="razao-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                      <label for="cnpj">CNPJ</label>
-                      <input type="text" name="cnpj" id="cnpj" class="input-stardard">
-                      <p id="cnpj-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                      <label for="endereco">Endereço</label>
-                      <input type="text" name="endereco" id="endereco" class="input-stardard">
-                      <p id="endereco-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" class="input-stardard" size="5">
-                    <p id="cidade-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                    <label for="estado">Estado</label><br>
-                    <select name="estado" id="estado" >
-                      <option value="" selected> Escolha </option>
-                      <option value="AC">Acre</option>
-                      <option value="AL">Alagoas</option>
-                      <option value="AP">Amapá</option>
-                      <option value="AM">Amazonas</option>
-                      <option value="BA">Bahia</option>
-                      <option value="CE">Ceará</option>
-                      <option value="DF">Distrito Federal</option>
-                      <option value="ES">Espírito Santo</option>
-                      <option value="GO">Goías</option>
-                      <option value="MA">Maranhão</option>
-                      <option value="MT">Mato Grosso</option>
-                      <option value="MS">Mato Grosso do Sul</option>
-                      <option value="MG">Minas Gerais</option>
-                      <option value="PA">Pará</option>
-                      <option value="PB">Paraíba</option>
-                      <option value="PR">Paraná</option>
-                      <option value="PE">Pernambuco</option>
-                      <option value="PI">Piauí</option>
-                      <option value="RJ">Rio de Janeiro</option>
-                      <option value="RN">Rio Grande do Norte</option>
-                      <option value="RS">Rio Grande do Sul</option>
-                      <option value="RO">Rondônia</option>
-                      <option value="RR">Roraima</option>
-                      <option value="SC">Santa Catarina</option>
-                      <option value="SE">Sergipe</option>
-                      <option value="SP">São Paulo</option>
-                      <option value="TO">Tocantins</option>
-                    </select>
-                    <p id="estado-helper" class="helper-text">Mensagem de ajuda</p>
-                </div>
-                  <br>
-                  <div class="form-sections">
-                      <label for="telefone">Telefone</label>
-                      <input type="text" name="telefone" id="telefone" class="input-stardard">
-                      <p id="telefone-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                      <label for="email">E-mail</label>
-                      <input type="text" name="email" id="email" class="input-stardard">
-                      <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <br>
-                  <div class="form-sections">
-                      <label for="responsavel">Responsável</label>
-                      <input type="text" name="responsavel" id="responsavel" class="input-stardard">
-                      <p id="responsavel-helper" class="helper-text">Mensagem de ajuda</p>
-                  </div>
-                  <div class="section-buttons">
-                    <button type="button">Voltar</button> 
-                    <button type="button">Salvar</button>
-                  </div>
-              </fieldset>  
+            <fieldset>
+              <br>
+              <div class="form-sections">
+                <label for="nome" class="labelInput">Nome Fantasia</label>
+                <input type="text" name="nome" id="nome" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="razao">Razão Social</label>
+                <input type="text" name="razao" id="razao" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" name="cnpj" id="cnpj" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" class="input-stardard" required>
+                <label for="endereco">Cidade</label>
+                <input type="text" name="cidade" id="cidade" class="input-stardard" size="5" required>
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" id="estado" class="input-stardard" size="5" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" class="input-stardard" required>
+              </div>
+              <br>
+              <div class="form-sections">
+                <label for="responsavel">Responsável</label>
+                <input type="text" name="responsavel" id="responsavel" class="input-stardard" required>
+              </div>
+                <div class="button-flex">
+                  <button class="butype-1" type="button" onclick="resetar()" id="reset">Cancelar</button>
+                  <button class="butype-2" type="button" onclick="validarCampos()">Salvar</button>
+              </div>
+            </fieldset>
           </form>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
   <footer>
     <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
   </footer>
