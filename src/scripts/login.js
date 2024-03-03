@@ -20,7 +20,7 @@ function validarLogin() {
     let usernameInput = document.getElementById('username');
     let usernameHelper = document.getElementById('username-helper');
 
-    if (usernameInput.value === "" || usernameInput.value !== "miranda@gmail.com"){
+    if (usernameInput.value != "miranda@gmail.com"){
         usernameHelper.innerText = "Usuário inválido";
         estilizarInputIncorreto(usernameInput, usernameHelper);
 
@@ -36,7 +36,7 @@ function validarLogin() {
     let passwordInput = document.getElementById('password');
     let passwordHelper = document.getElementById('password-helper');
 
-    if(passwordInput.value === "" || passwordInput.value !== "123456789"){
+    if(passwordInput.value !== "123456789"){
         passwordHelper.innerText = "Senha inválida";
         estilizarInputIncorreto(passwordInput, passwordHelper);
 
