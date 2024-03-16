@@ -1,4 +1,4 @@
-pharmaItens = {
+let pharmaItens = {
     nomeFantasia: false,
     razaoSocial: false,
     cnpj: false,
