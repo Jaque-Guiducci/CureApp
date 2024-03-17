@@ -30,7 +30,7 @@ function validarCampos() {
     
     //Validar nome completo
     let nomeCompletoInput = document.getElementById("nomecompleto");
-    let nomeCompletoHelper = document.getElementById("nomecompleto-helper")
+    let nomeCompletoHelper = document.getElementById("nomecompleto-helper");
 
     if (nomeCompletoInput.value.length < 15  || nomeCompletoInput.value === ""){
         nomeCompletoHelper.innerText = "Seu nome completo deve ter 15 ou mais caracteres";

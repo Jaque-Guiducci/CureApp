@@ -11,6 +11,7 @@
     <!--styles-->
     <link rel="stylesheet" href="..//styles/global.css">
     <link rel="stylesheet" href="..//styles/campaign-request.css">
+    <script src="../scripts/campaign-request.js" defer></script>
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,30 +28,34 @@
             </div>
             <form action="" class="medicine-request">
                 <div class="form-medicine">
-                    <label for="name">Medicamento*</label>
-                    <input type="text" id="name" class="input-stardard" maxlength="50">
+                    <label for="medicamento">Medicamento*</label>
+                    <input type="text" id="medicamento" class="input-stardard" maxlength="50">
+                    <p id="medicamento-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
             
                 <div class="select-pharma">
                     <label for="pharm">Selecione até 03 farmácias parceiras: </label>
                     <select name="pharm" class="" id="pharm-option" multiple size="06">
+                        <option value="" selected>Escollha</option>
                         <option value="valor1">Drogaria Pacheco</option>
                         <option value="valor2">Drogaria Indiana</option>
                         <option value="valor3">Drogaria São Paulo</option>
                         <option value="valor4">Drogaria Araújo </option>
                     </select>                   
-                    
+                    <p id="pharm-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
 
                 <div class="form_text">
-                    <label for="telefone">Agora nos conte mais sobre você e porque você precisa da medicação:</label>
-                    <textarea></textarea>
+                    <label for="justificativa">Agora nos conte mais sobre você e porque você precisa da medicação:</label>
+                    <textarea id="justificativa"></textarea>
+                    <p id="justificativa-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
 
                 <div class="form-closure">
                     <div class="box-one">
                         <label for="date">Data de Encerramento da Campanha </label>
                         <input type="date" id="closure-date" class="input-stardard">
+                        <p id="closure-helper" class="helper-text">Mensagem de ajuda</p>
                     </div>
                     <div class="box-two">
                         <input type="radio" id="recurrent" class="radio" >
@@ -63,22 +68,25 @@
                     <div class="inputContainer" tabindex="0">
                         <label for="">Clique aqui ou arrasate para fazer o upload do arquivo </label>
                         <input multiple="multiple" class="fileupload-input" id="input_303" type="file" name="file">
+                        <p id="prescription-helper" class="helper-text">Mensagem de ajuda</p>
                     </div> 
                         
                 </div>
                 <div class="accept">
                     <input type="radio" id="accept" class="radio" >
                     <label for="tex">Li e aceito os termos de uso.</label>
+                    <p id="accept-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="accept">
                     <input type="radio" id="declare" class="radio" >
                     <label for="tex">Declaro verdadeiras as informações aqui declaradas.</label>
+                    <p id="declare-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>                    
             </form>
     
             <div class="button-flex">
                 <button class="butype-1" type="button" onclick="resetar()" id="reset">Cancelar</button>
-                <button class="butype-2" type="button" onclick="validarCampos()">Salvar</button>
+                <button class="butype-2" type="button" onclick="validarInfo()">Salvar</button>
             </div>
     </main>
     <footer>

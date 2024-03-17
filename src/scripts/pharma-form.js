@@ -25,7 +25,7 @@ function validarCampos() {
     
     //Validar nome fantasia
     let nomeFantasiaInput = document.getElementById("nome");
-    let nomeFantasiaHelper = document.getElementById("nome-helper")
+    let nomeFantasiaHelper = document.getElementById("nome-helper");
 
     if (nomeFantasiaInput.value.length < 15  || nomeFantasiaInput.value === ""){
         nomeFantasiaInput.innerText = "O campo deve ter 15 ou mais caracteres";
@@ -40,7 +40,7 @@ function validarCampos() {
 
     //Validar Razão Social
     let razaoSocialInput = document.getElementById("razao");
-    let razaoSocialHelper = document.getElementById("razao-helper")
+    let razaoSocialHelper = document.getElementById("razao-helper");
 
     if (razaoSocialInput.value.length < 15  || razaoSocialInput.value === ""){
         razaoSocialHelper.innerText = "O campo deve ter 15 ou mais caracteres";
@@ -143,7 +143,7 @@ function validarCampos() {
 
     //Validar responsável
     let responsavelInput = document.getElementById("responsavel");
-    let responsavelHelper = document.getElementById("responsavel-helper")
+    let responsavelHelper = document.getElementById("responsavel-helper");
 
     if (responsavelInput.value.length < 15  || responsavelInput.value === ""){
         responsavelHelper.innerText = "O campo deve ter 15 ou mais caracteres";

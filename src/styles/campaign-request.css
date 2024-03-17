@@ -165,3 +165,20 @@ button{
     margin-bottom: 5px;
     width: 102%;
 }
+
+/* Estilizações dinâmicas */
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+  
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+  
+.visible {
+    display: block;
+}
