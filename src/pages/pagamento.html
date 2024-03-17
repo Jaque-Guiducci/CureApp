@@ -35,7 +35,7 @@
                         <legend>Preencha os campos corretamente e escolha uma forma de pagamento:</legend>
                         <div class="form-name">
                             <label for="name">Nome Completo:</label>
-                            <input type="text" id="name" class="input-stardard" placeholder="Nome Completo" maxlength="50">
+                            <input type="text" id="name" class="input-stardard" maxlength="50">
                             <p id="name-helper" class="helper-text">Mensagem de ajuda</p>
                         </div>
                         <legend>Caso queira acompanhar o andamento da campanha, informe seus dados de contato,
@@ -55,8 +55,9 @@
                         <div class="form-forma">
                             <label for="select">Forma de pagamento</label>
                             <select forma="select" class="input-stardard">
+                                <option value="" selected>Escolha</option>
                                 <option value="valor1">Cartão de Crédito</option>
-                                <option value="valor2" selected>Pix</option>
+                                <option value="valor2">Pix</option>
                             </select>
                         </div>
 
