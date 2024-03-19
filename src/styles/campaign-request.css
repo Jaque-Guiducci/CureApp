@@ -5,14 +5,19 @@ main {
     padding: 0;
 }
 
+div{
+    margin-bottom: 10px;
+}
+
 .subscription-campaign-request {
     display: flex;
     flex-direction: column;
     width: 1440px;
-    height: 1232px;
+    /* height: 1232px; */
     background-color: #FFF;
     justify-content: center;
     align-items: center;
+    margin-left: 25px;
 }
 
 .second-box {
@@ -53,6 +58,10 @@ label {
     line-height: 32px;
     /* 177.778% */
     width: 766px;
+}
+
+#file{
+    font-size: 15px;
 }
 
 .input-stardard {
@@ -116,12 +125,16 @@ textarea, .inputContainer{
 
 .radio{
     width: 20px;
-height: 20px;
-flex-shrink: 0;
-border-radius: 20px;
-border: 1px solid var(--BaseGray, #D9D9D9);
-background: var(--BaseWhite, #FCFAEF);
-margin: 0.6rem;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--BaseGray, #D9D9D9);
+    background: var(--BaseWhite, #FCFAEF);
+    margin: 2rem 0.6rem 0.6rem;
+}
+
+.recurrent{
+    margin-top: 20px;
 }
 
 .inputContainer{
@@ -145,32 +158,33 @@ button{
 }
 
 .butype-1{
-    border: 1px solid #073142;
+    border: 1px solid #eae5ca;
     color: #073142;
     background-color: #FCFAEF;
     font-weight: bold;
-    margin: 0 3rem;
+    margin: 0 3rem 2rem;
 }
 .butype-2{
     color: #FCFAEF;
     background-color: #D88A77;
     border: none;
-    margin: 0 3rem;
+    margin: 0 3rem 2rem;
 }
 .select{
-    height: 36px;
+    /* height: 36px; */
     background-color:  #FCFAEF;
     border: 2px solid #D9D9D9;
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 102%;
+    width: 100%;
+    font-size: 15px;
 }
 
 /* Estilizações dinâmicas */
 input.error {
-    border: solid 2px #992020;
-    background-color: #CCBBBB;
-    color: #662020;
+    border: solid 2px #992020 !important;
+    background-color: #CCBBBB !important;
+    color: #662020 !important;
 }
   
 .helper-text {
