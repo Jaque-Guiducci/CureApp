@@ -178,6 +178,7 @@ button{
     margin-bottom: 5px;
     width: 100%;
     font-size: 15px;
+    height: 45px;
 }
 
 /* Estilizações dinâmicas */
@@ -195,4 +196,73 @@ input.error {
   
 .visible {
     display: block;
+}
+
+/* Celulares */
+
+@media(max-width: 450px){
+    .subscription-campaign-request{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    label{
+        width: 100%;
+    }
+
+    .second-box{
+        width: 100%;
+        height: 110px;
+    }
+
+    .second-box h1{
+        font-size: 35px;
+    }
+
+    .medicine-request{
+        width: 90%;
+    }
+
+    .input-stardard{
+        width: 100%;
+    }
+
+    textarea, .inputContainer{
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+    }
+
+    .inputContainer{
+        background-size: 60px;
+    }
+
+    .form-closure{
+        display: block;
+        width: 100%;
+    }
+
+    .form-closure label{
+        width: 100%;
+    }
+
+    .form-closure .box-one{
+        width: 100%;
+    }
+
+    .form-closure .box-two{
+        width: 100%;
+    }
+
+    .accept{
+        height: 50px;
+    }
+
+    .butype-1{
+        margin: 2rem 3rem 2rem;
+    }
+
+    .butype-2{
+        margin: 2rem 3rem 2rem;
+    }
 }
