@@ -102,32 +102,30 @@ function validarInfo(){
     // Validar Accept
     let acceptInput = document.getElementById("accept");
     let acceptHelper = document.getElementById("accept-helper");
-    let checked = acceptInput.checked;
 
-    if (checked === false){
+    if (document.querySelector("#accept:checked") === null){
         acceptHelper.innerText = "Aceite os termos de uso";
         estilizarInputIncorreto(acceptInput, acceptHelper);
 
         setTimeout(() =>{
             estilizarInputCorreto(acceptInput, acceptHelper);
         }, 5000);
-    } else if (checked !== false) {
+    } else if (document.querySelector("#accept:checked")) {
         campaignInfo.accept = true;
     }
 
     // Validar Declare
     let declareInput = document.getElementById("declare");
     let declareHelper = document.getElementById("declare-helper");
-    let checked_declare = declareInput.checked_declare;
 
-    if (checked_declare === false){
+    if (document.querySelector("#declare:checked") === null){
         declareHelper.innerText = "Declare que as informações são verdadeiras";
         estilizarInputIncorreto(declareInput, declareHelper);
 
         setTimeout(() =>{
             estilizarInputCorreto(declareInput, declareHelper);
         }, 5000);
-    } else if (checked_declare !== false) {
+    } else if (document.querySelector("#declare:checked")) {
         campaignInfo.declare = true;
     }    
     

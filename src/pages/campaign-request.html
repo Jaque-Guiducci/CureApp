@@ -35,7 +35,7 @@
             
                 <div class="select-pharma">
                     <label for="pharm">Selecione até 03 farmácias parceiras: </label>
-                    <select name="pharm" class="" id="pharm-option" multiple size="06">
+                    <select name="pharm" class="select" id="pharm-option" >
                         <option value="" selected>Escollha</option>
                         <option value="valor1">Drogaria Pacheco</option>
                         <option value="valor2">Drogaria Indiana</option>
@@ -59,26 +59,26 @@
                     </div>
                     <div class="box-two">
                         <input type="radio" id="recurrent" class="radio" >
-                        <label for="medicine">Preciso dessa medicação com recorrência.</label>
+                        <label for="medicine" class="recurrent">Preciso dessa medicação com recorrência.</label>
                     </div>
                 </div>
                 <div class="form-prescription">
                     <label for="prescription">Faça o upload da receita médica válida. Você ainda deverá apresentar a receita a farmácia quando
                         for retirar o medicamento.</label>
                     <div class="inputContainer" tabindex="0">
-                        <label for="">Clique aqui ou arrasate para fazer o upload do arquivo </label>
+                        <label for="" id="file" >Clique aqui ou arrasate para fazer o upload do arquivo </label>
                         <input multiple="multiple" class="fileupload-input" id="input_303" type="file" name="file">
                         <p id="prescription-helper" class="helper-text">Mensagem de ajuda</p>
                     </div> 
                         
                 </div>
                 <div class="accept">
-                    <input type="radio" id="accept" class="radio" >
+                    <input type="checkbox" id="accept" class="radio" >
                     <label for="tex">Li e aceito os termos de uso.</label>
                     <p id="accept-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="accept">
-                    <input type="radio" id="declare" class="radio" >
+                    <input type="checkbox" id="declare" class="radio" >
                     <label for="tex">Declaro verdadeiras as informações aqui declaradas.</label>
                     <p id="declare-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>                    
@@ -88,6 +88,7 @@
                 <button class="butype-1" type="button" onclick="resetar()" id="reset">Cancelar</button>
                 <button class="butype-2" type="button" onclick="validarInfo()">Salvar</button>
             </div>
+        </div>
     </main>
     <footer>
         <img id="footer-logo" src="../assets/images/logo.png" alt="logo cure app">
