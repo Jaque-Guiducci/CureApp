@@ -19,15 +19,8 @@ main {
     background-size: cover;
 }
 
-.first-box {
+.first-box, .second-box, .card {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.first-box .second-box .card {
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -35,13 +28,13 @@ main {
 } 
 
 .second-box .card {
-    width: 460px;
+    width: 28.75;
 }
 
 .form-title {
     display: flex;
     width: 100%;
-    height: 186px;
+    height: 10rem;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -53,7 +46,7 @@ main {
     text-align: center;
     font-feature-settings: 'subs'on;
     font-family: Bellota Text;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
@@ -70,41 +63,41 @@ main {
 
 .first-form {
     box-shadow: 0px 2px #073142;
-    width: 460px;
+    width: 28.75rem;
 }
 
 .first-form label,
 .card label {
     color: var(--DarkBlue, #073142);
     font-family: Bellota Text;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 2rem;
     /* 228.571% */
 }
 
 legend {
     color: #3E8A9B;
     font-family: Bellota Text;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    width: 457px;
-    line-height: 34px;
+    width: 28.563rem;
+    line-height: 1.6rem;
     /* 228.571% */
     text-align: justify;
 }
 
 .card-input-more .input-stardard {
-    width: 162px;
-    height: 34px;
+    width: 10.125rem;
+    height: 2.125rem;
     flex-shrink: 0;
 }
 
 .input-stardard {
-    width: 457px;
-    height: 34px;
+    width: 28.563rem;
+    height: 2.125rem;
     flex-shrink: 0;
     border: 2px solid var(--BaseGray, #D9D9D9);
     background: var(--BaseWhite, #FCFAEF);
@@ -117,8 +110,8 @@ legend {
 .form-data,
 .card-input {
     display: flex;
-    width: 457px;
-    height: 66px;
+    width: 28.463rem;
+    height: 4,125rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -126,11 +119,13 @@ legend {
 }
 
 .data {
-    width: 460px;
+    width: 28.75rem;
 }
+.card-input-more{
+    display: flex;
+    justify-content: space-around;
 
-.card-input-more,
-
+}
 .card-input-more .box-one,
 .box-two {
     display: flex;
@@ -139,17 +134,81 @@ legend {
 
 
 button{
-    width: 116px;
-    height: 39px;
-    border-radius: 15px;
-    font-size: 16px;
+    width: 7.25rem;
+    height: 2.438rem;
+    border-radius: 0.9rem;
+    font-size: 1rem;
     margin: 0 4rem;
  }
+
+ /* Media query */
+
+@media (max-width: 450px){
+    main {
+       display: block;
+       margin: 0;
+       padding: 0;
+    }
+    
+    .subscription-pay-page {
+       display: inline-block;
+       text-align: center;
+       width: 100vw;
+    }
+
+    .payment-img {
+        width: 90vw;
+        height: 10rem;
+        margin: 1.25rem auto;    
+        background-image: url(../assets/images/payForm.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .first-box, .second-box, .card {
+    width: 100vw;
+      
+} 
+
+.first-form,
+.card form {
+    display: inline;
+    width: 90vw;
+    padding: 0;
+}
+
+.form-name,
+.form-email,
+.form-tel,
+.form-forma,
+.form-data,
+.card-input,
+.input-stardard,
+legend {
+    
+    width: 85vw;
+    line-height: 1.6rem;
+}
+button{
+    border-radius: 0.938rem;
+    font-size: 1rem;
+    margin: 0.9rem;
+ }
+ .card-input-more{
+    flex-direction: column;
+    align-items: center;
+
+}
+ .button-flex {
+    flex-direction: column;
+}
+}
+
 
 .button-flex{
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .butype-1{
@@ -168,6 +227,7 @@ button{
     color: #FCFAEF;
     background-color: #D88A77;
     border: none;
+    margin-bottom: 1rem;
 }
 
 .butype-2:hover{
