@@ -4,6 +4,7 @@ class CureHeader extends HTMLElement {
 		const shadow = this.attachShadow({ mode: "open" })
 		shadow.appendChild(this.build())
 		shadow.appendChild(this.style())
+		this.attachEvents(shadow);
 	}
 
 	build() {
@@ -91,7 +92,7 @@ class CureHeader extends HTMLElement {
 		style.textContent = `
 		header {
 			height: 60px;
-			width: 100vw;
+			width: 100%;
 			background-color: #3E8A9B;
 		  }
 		  
@@ -118,26 +119,36 @@ class CureHeader extends HTMLElement {
 
 		@media screen and (max-width: 450px) {
 			ul {
-				display: none; /* Oculta o menu principal em telas menores */
+				display: none;
 				position: absolute;
-				top: 60px; /* Ajusta a posição do menu hamburguer */
+				top: 40px; /* Ajusta a posição do menu hamburguer */
 				left: 0;
-				width: 100%;
+				width: 90vw;
 				flex-direction: column;
+				justify-content: unset;
 				background-color: #3E8A9B;
 				z-index: 1; /* Garante que o menu hamburguer esteja acima do conteúdo da página */
+			}
+
+			ul > li {
+				height: 20px !important;
+				width: 100%;
+				margin-top: 30px !important;
+				margin-bottom: 30px !important;
 			}
 
 			.hamburger-icon {
 				display: block; /* Exibe o ícone de menu hamburguer em telas menores */
 				cursor: pointer;
 				margin-right: 1rem;
+				color: #FFFFFF !important;
 			}
 
 			.menu-itens {
 				text-align: center;
 				padding: 10px 0;
 				width: 100%;
+				height: 10px !important;
 			}
 
 			.menu-itens:hover {
@@ -145,9 +156,14 @@ class CureHeader extends HTMLElement {
 				background-color: rgba(252, 250, 239, 0.5);
 			}
 		}
+
 		.menu-visible {
-			display: flex !important;
+			display: block !important;
 		}
+		.menu-invisible {
+			display: none;
+		}
+
 		  li {
 			height: 100%;
 			
@@ -188,14 +204,26 @@ class CureHeader extends HTMLElement {
 	// Adiciona eventos para lidar com a visibilidade do menu
 	attachEvents(shadow) {
 		const hamburgerIcon = shadow.querySelector(".hamburger-icon");
-		const menuList = shadow.querySelector('buildItem(item)');
+		const menuList = shadow.querySelector('ul');
+
+		
 
 		// Alterna a visibilidade do menu quando o ícone do menu hamburguer é clicado
 		hamburgerIcon.addEventListener("click", () => {
-			menuList.classList.toggle("menu-visible");
+			//testa se a lista do menu está visivel
+			const isVisible = menuList.style.display === 'block';
+
+			if (isVisible) {
+				//se a lista estiver visivel, setamos um display none no css da lista ul
+				menuList.style.display = 'none';
+			} else {
+				//se a lista estiver visivel, setamos um display block no css da lista ul
+				menuList.style.display = 'block';
+			}
+
 		});
 
-		// Fecha o menu quando um item é clicado (opcional)
+		// // Fecha o menu quando um item é clicado (opcional)
 		menuList.addEventListener("click", () => {
 			menuList.classList.remove("menu-visible");
 		});
