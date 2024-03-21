@@ -1,13 +1,13 @@
 class CureHeader extends HTMLElement {
-  constructor() {
-    super();
-		const shadow = this.attachShadow({mode: "open"})
+	constructor() {
+		super();
+		const shadow = this.attachShadow({ mode: "open" })
 		shadow.appendChild(this.build())
 		shadow.appendChild(this.style())
-  }
+	}
 
 	build() {
-		
+
 		const origin = this.getAttribute('origin')
 		//cria a raiz da sub-arvore
 		const rootTemplate = document.createElement('header');
@@ -24,11 +24,17 @@ class CureHeader extends HTMLElement {
 		headerImage.alt = "cure logo"
 		nav.appendChild(headerImage);
 		nav.appendChild(ul);
-		
+
+		//cria o ícone do menu hamburguer
+		const hamburgerIcon = document.createElement("div");
+		hamburgerIcon.classList.add("hamburger-icon");
+		hamburgerIcon.innerHTML = `<ion-icon id="nav-icon" name="menu"></ion-icon>`;
+		nav.appendChild(hamburgerIcon);
+
 		//cria os itens do menu
 		const options = this.getAttribute('options');
 		const optionsList = options.split(",");
-		
+
 		optionsList.forEach((item) => {
 			ul.appendChild(this.buildItem(item))
 		})
@@ -56,7 +62,7 @@ class CureHeader extends HTMLElement {
 				campaign: "./campaign.html",
 				login: "./login.html",
 				profile: "./perfil.html"
-			}	
+			}
 		}
 		const labels = {
 			suporter: "Quero ajudar!",
@@ -68,19 +74,19 @@ class CureHeader extends HTMLElement {
 		}
 		const Tag = document.createElement('li')
 		const Link = document.createElement('a')
-		if (item === "home"){
+		if (item === "home") {
 			Link.innerHTML = `<ion-icon id="nav-icon" name="home"></ion-icon>`
-		 } else {
+		} else {
 			Link.textContent = labels[item]
-		 } 
+		}
 		Link.href = paths[origin][item]
 		Link.setAttribute('class', 'menu-itens')
 		Tag.appendChild(Link);
-		
-		return Tag
-	  }
 
-	  style() {
+		return Tag
+	}
+
+	style() {
 		const style = document.createElement('style');
 		style.textContent = `
 		header {
@@ -94,9 +100,8 @@ class CureHeader extends HTMLElement {
 			align-items: center;
 			flex-direction: row;
 			justify-content: space-between;
-			margin: 0 10px;
-		  
-			height: 100%;
+			margin: 0 0 0 10px;
+		  	height: 100%;
 		  }
 		  
 		  ul {
@@ -107,7 +112,42 @@ class CureHeader extends HTMLElement {
 			height: 100%;
 			list-style: none;
 		  }
-		  
+		  .hamburger-icon {
+			display: none; /* Oculta o ícone de menu hamburguer em telas maiores */
+		}
+
+		@media screen and (max-width: 450px) {
+			ul {
+				display: none; /* Oculta o menu principal em telas menores */
+				position: absolute;
+				top: 60px; /* Ajusta a posição do menu hamburguer */
+				left: 0;
+				width: 100%;
+				flex-direction: column;
+				background-color: #3E8A9B;
+				z-index: 1; /* Garante que o menu hamburguer esteja acima do conteúdo da página */
+			}
+
+			.hamburger-icon {
+				display: block; /* Exibe o ícone de menu hamburguer em telas menores */
+				cursor: pointer;
+				margin-right: 1rem;
+			}
+
+			.menu-itens {
+				text-align: center;
+				padding: 10px 0;
+				width: 100%;
+			}
+
+			.menu-itens:hover {
+				color: #073742;
+				background-color: rgba(252, 250, 239, 0.5);
+			}
+		}
+		.menu-visible {
+			display: flex !important;
+		}
 		  li {
 			height: 100%;
 			
@@ -144,7 +184,22 @@ class CureHeader extends HTMLElement {
 		`
 
 		return style
-	  }
+	}
+	// Adiciona eventos para lidar com a visibilidade do menu
+	attachEvents(shadow) {
+		const hamburgerIcon = shadow.querySelector(".hamburger-icon");
+		const menuList = shadow.querySelector('buildItem(item)');
+
+		// Alterna a visibilidade do menu quando o ícone do menu hamburguer é clicado
+		hamburgerIcon.addEventListener("click", () => {
+			menuList.classList.toggle("menu-visible");
+		});
+
+		// Fecha o menu quando um item é clicado (opcional)
+		menuList.addEventListener("click", () => {
+			menuList.classList.remove("menu-visible");
+		});
+	}
 }
 
 customElements.define("cure-header", CureHeader);
